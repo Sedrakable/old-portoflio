@@ -54,11 +54,13 @@
         <div class="item_grid">
 
             <div open-button="#popup" class="item_wrapper">
+                <div class="item_background_invis">
+                    <img src="Pictures/Drawing/pinecone.jpg">
+                </div>
                 <div class="item_background">
-                    <img src="Pictures/Drawing/wood.png">
+                    <img src="Pictures/Drawing/pinecone_low.jpg">
                 </div>
                 <h3 id=item_title>Tree bark</h3>
-
                 <div class="item_description_invis">
                     <div class="item_description">
                         <div class="popup_description">A small precise pencil drawing of a Tree Bark.</div>
@@ -69,12 +71,12 @@
             </div>
 
             <div class="item_wrapper">
-                <div class="item_background">
-                    <img src="Pictures/Drawing/pinecone.png">
+                <div class="item_background_invis">
+                    <img src="Pictures/Drawing/pinecone.jpg">
                 </div>
-                <!-- <div class="item_background_invis">
-                    <img src="Pictures/Drawing/pinecone.png">
-                </div> -->
+                <div class="item_background">
+                    <img src="Pictures/Drawing/pinecone_low.jpg">
+                </div>
                 <h3 id=item_title>Pinecone</h3>
                 <div class="item_description_invis">
                     <div class="item_description">
@@ -86,8 +88,11 @@
             </div>
 
             <div class="item_wrapper">
+                <div class="item_background_invis">
+                    <img src="Pictures/Drawing/pinecone.jpg">
+                </div>
                 <div class="item_background">
-                    <img src="Pictures/Drawing/metal.png">
+                    <img src="Pictures/Drawing/pinecone_low.jpg">
                 </div>
                 <h3 id=item_title>Tin Foil</h3>
                 <div class="item_description_invis">
@@ -100,8 +105,11 @@
             </div>
 
             <div class="item_wrapper">
+                <div class="item_background_invis">
+                    <img src="Pictures/Drawing/pinecone.jpg">
+                </div>
                 <div class="item_background">
-                    <img src="Pictures/Drawing/2_sculls.png">
+                    <img src="Pictures/Drawing/pinecone_low.jpg">
                 </div>
                 <h3 id=item_title>Two Sculls</h3>
                 <div class="item_description_invis">
@@ -115,24 +123,38 @@
 
         </div>
 
+        <button class = "arrow" id=left_arrow>
+            <img src="Logos/arrow_big.png">
+        </button>
+
         <div class="popup" id='popup'>
-            <div class="popup_left">
-                <div class="popup_background">
+            
+            
 
-                </div>
-            </div>
-            <div class="popup_right">
-                <div class="header">
-                    <div class="title">
+                    <div class="popup_left">
+                        <div class="popup_background">
 
+                        </div>
                     </div>
-                    <button class="close_button">&times;</button>
-                </div>
-                <div class="popup_text">
+                    <div class="popup_right">
+                        <div class="header">
+                            <div class="title">
 
-                </div>
-            </div>
+                            </div>
+                            <button class="close_button">&times;</button>
+                        </div>
+                        <div class="popup_text">
+
+                        </div>
+                    </div>
+            
+            
+           
         </div>
+
+        <button class = "arrow" id=right_arrow>
+            <img src="Logos/arrow_big.png">
+        </button>
 
         <div id="overlay"></div>
 
