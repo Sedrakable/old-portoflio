@@ -472,13 +472,12 @@ p {
 }
 
 .reveal_text{
-    transition: 0.5s;
-    color: white;
-    
+    transition: 0.s;
+    color: white;  
 }
 
 .hide_text{
-    transition: 0.5s;
+    transition: 0.2s;
     color: transparent;
 }
 
@@ -509,7 +508,9 @@ p {
 
 .popup_left{
     max-width: 1000px;
-    display: inline-flex;
+    display: flex;
+    position:relative !important;
+
 }
 
 .popup_background{
@@ -600,6 +601,7 @@ p {
     outline: none;
     border: none;
     position: fixed;
+    display: inline-flex;
     top:50%;  
     pointer-events: none;
     transform: translate(0, -50%) scale(0);
@@ -635,7 +637,47 @@ p {
 #left_arrow.active{
     transform: translate(0, -50%) rotate(180deg);
 
+
 }
+
+.flesh{
+    cursor: pointer;
+    background: none;
+    outline: none;
+    border: none;
+    position: absolute;
+    padding-top: 275px;
+    padding-bottom: 275px;
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+    transition: 0.5s ease-in-out;
+      
+}
+
+.flesh >img:hover{
+    filter: grayscale(100%);
+    transition: 0ms;
+}
+
+.flesh.blocked{
+    pointer-events: none;
+    display: none;
+}
+
+.flesh > img{
+    width: 50px;
+}
+
+#right_flesh{
+  right: 5%;
+}
+
+#left_flesh{
+    left: 5%;
+    transform:rotate(180deg) ;
+}
+
 
 .close_button:hover{ 
     color: rgb(254,183,1);
@@ -692,5 +734,39 @@ h1 {
 
 h3 {
     color: transparent;
+}
+
+
+
+.dots >img{
+    /* display: inline; */
+    width: 20px;
+    margin: 0;
+    padding: 5px;
+}
+
+.dots{
+    position: absolute;
+    top: 95%;  
+    left: 50%;
+    transform: translate(-50%,-95%);
+    opacity: 0;
+    
+
+}
+
+.reveal_dot{
+    transition: 0.s;
+    opacity: 1; 
+}
+
+.hide_dot{
+    transition: 0.2s;
+    opacity: 0;
+}
+
+
+#dots_holder{
+    display: none;
 }
 
