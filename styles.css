@@ -601,6 +601,7 @@ p {
     border: none;
     position: fixed;
     top:50%;  
+    pointer-events: none;
     transform: translate(0, -50%) scale(0);
     transition: 0.5s ease-in-out;
     z-index: 3;  
@@ -613,6 +614,7 @@ p {
 
 
 .arrow.active{
+    pointer-events: all;
     transform: translate(0, -50%) scale(1);
 }
 

@@ -24,6 +24,7 @@ const closePopupButton = document.querySelectorAll('.close_button')
 const overlay = document.getElementById('overlay')
 const leftButton = document.getElementById('left_arrow')
 const rightButton = document.getElementById('right_arrow')
+
 var currentCategory;
 
 
@@ -42,9 +43,9 @@ function Open(button){
     const cloneDescription = description.cloneNode(true);
     const popupDescription = popup.childNodes[3].childNodes[3];
 
-    popupBackground.appendChild(cloneBackground);
-    popupDescription.appendChild(cloneDescription);      
+    popupBackground.appendChild(cloneBackground);      
     popupTitle.appendChild(cloneTitle);
+    popupDescription.appendChild(cloneDescription);   
     openPopup(popup);
 }
 
@@ -55,20 +56,47 @@ function Close(){
         const popupBackground1 = popup.childNodes[1].childNodes[1];
         const popupBackground = popup.childNodes[1].childNodes[1].childNodes[1];
 
+        const popupTitle1 = popup.childNodes[3].childNodes[1].childNodes[1];
+        const popupTitle = popup.childNodes[3].childNodes[1].childNodes[1].childNodes[1];
+
         const popupDescription1 = popup.childNodes[3].childNodes[3];
         const popupDescription = popup.childNodes[3].childNodes[3].childNodes[1];
 
-        const popupTitle1 = popup.childNodes[3].childNodes[1].childNodes[1];
-        const popupTitle = popup.childNodes[3].childNodes[1].childNodes[1].childNodes[1];
+        
 
         closePopup(popup)
         setTimeout(function() {
 
-        popupBackground1.removeChild(popupBackground)
-        popupDescription1.removeChild(popupDescription)
+        popupBackground1.removeChild(popupBackground)     
         popupTitle1.removeChild(popupTitle)
+        popupDescription1.removeChild(popupDescription)
 
         }, 500)
+}
+
+function Replace(button){
+
+    const popup = document.getElementById('popup')
+
+    const popupBackgroundContainer = popup.childNodes[1].childNodes[1];
+    const popupBackground = popup.childNodes[1].childNodes[1].childNodes[1];
+    const background = button.childNodes[1].childNodes[1];
+    const cloneBackground = background.cloneNode(true);
+
+    const popupTitleContainer = popup.childNodes[3].childNodes[1].childNodes[1];
+    const popupTitle = popup.childNodes[3].childNodes[1].childNodes[1].childNodes[1];
+    const title = button.childNodes[5].childNodes[0];
+    const cloneTitle = title.cloneNode(true);
+
+    const popupDescriptionContainer = popup.childNodes[3].childNodes[3];
+    const popupDescription = popup.childNodes[3].childNodes[3].childNodes[1];
+    const description = button.childNodes[7].childNodes[1];
+    const cloneDescription = description.cloneNode(true);
+
+    popupBackgroundContainer.replaceChild(cloneBackground, popupBackground);
+    popupTitleContainer.replaceChild(cloneTitle, popupTitle);
+    popupDescriptionContainer.replaceChild(cloneDescription, popupDescription);
+    tryer()
 }
 
 
@@ -76,6 +104,7 @@ openPopupButton.forEach(button => {
     button.addEventListener('click', () => {  
         Open(button)    
         currentCategory = button;
+        tryer()
     })
 })
 
@@ -102,44 +131,48 @@ function closePopup(popup) {
     leftButton.classList.remove('active')
     rightButton.classList.remove('active')
     
-}
+}   function leftClick(){
+        const leftCategory = currentCategory.previousSibling.previousSibling; 
+        currentCategory = leftCategory;     
+        Replace(leftCategory)
+    }
 
+    function rightClick(){
+        const rightCategory = currentCategory.nextSibling.nextSibling;    
+        currentCategory = rightCategory;  
+        Replace(rightCategory)
+    }
 
     leftButton.addEventListener('click', () => {  
-
-        const leftCategory = currentCategory.previousSibling.previousSibling;
-        // if(leftCategory.classList == currentCategory.classList )
-        // {
-        //     leftCategory = currentCategory.parentNode.lastChild; 
-        currentCategory = leftCategory;
-        console.log(leftCategory)
-        // }
-        
-            Close();
-            
-        
-        Open(leftCategory);
-        // leftCategory.Click();
-        
-     
+        leftClick()   
     })
 
     rightButton.addEventListener('click', () => {  
-
-        const rightCategory = currentCategory.nextSibling.nextSibling;
-        // if(rightCategory.classList == currentCategory.classList )
-        // {
-        //     rightCategory = currentCategory.parentNode.lastChild; 
-        currentCategory = rightCategory;
-        console.log(rightCategory)
-        // }
-        
-            Close();
-            
-        
-        Open(rightCategory);
-        // leftCategory.Click();
-        
-     
+        rightClick()       
     })
+
+    function tryer(){
+        const rightCategory = currentCategory.nextSibling.nextSibling;
+        
+
+        if(rightCategory == null)
+        {
+            rightButton.classList.remove('active')
+        }
+        else{
+            rightButton.classList.add('active')
+        }
+        
+
+        const leftCategory = currentCategory.previousSibling.previousSibling;
+
+        if(leftCategory == null)
+        {
+            leftButton.classList.remove('active')
+        }
+        else{
+            leftButton.classList.add('active')
+        }
+        
+    }
 
