@@ -750,14 +750,14 @@ h3 {
     top: 95%;  
     left: 50%;
     transform: translate(-50%,-95%);
-    opacity: 0;
+   
     
 
 }
 
 .reveal_dot{
-    transition: 0.s;
-    opacity: 1; 
+    transition: 0.2s;
+    opacity: 1 ; 
 }
 
 .hide_dot{
@@ -768,5 +768,10 @@ h3 {
 
 #dots_holder{
     display: none;
+}
+
+.low_opacity{
+    transition: 0.2s;
+    opacity: 0.5;
 }
 

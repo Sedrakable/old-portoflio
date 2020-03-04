@@ -51,9 +51,16 @@ function Open(button){
     const cloneDescription = description.cloneNode(true);
     const popupDescription = popup.childNodes[3].childNodes[3];
 
+    const dots = button.childNodes[9];
+    const cloneDots= dots.cloneNode(true);
+    const popupDots = popup.childNodes[1].childNodes[7];
+    cloneDots.classList.remove('reveal_dot')
+    cloneDots.classList.add('low_opacity')
+
     popupBackground.appendChild(cloneBackground);      
     popupTitle.appendChild(cloneTitle);
     popupDescription.appendChild(cloneDescription);   
+    popupDots.appendChild(cloneDots);
     openPopup(popup);
 }
 
@@ -70,7 +77,8 @@ function Close(){
         const popupDescription1 = popup.childNodes[3].childNodes[3];
         const popupDescription = popup.childNodes[3].childNodes[3].childNodes[1];
 
-        
+        const popupDots1 = popup.childNodes[1].childNodes[7];
+        const popupDots = popup.childNodes[1].childNodes[7].childNodes[1];
 
         closePopup(popup)
         setTimeout(function() {
@@ -78,6 +86,7 @@ function Close(){
         popupBackground1.removeChild(popupBackground)     
         popupTitle1.removeChild(popupTitle)
         popupDescription1.removeChild(popupDescription)
+        popupDots1.removeChild(popupDots)
 
         }, 500)
 }
@@ -101,10 +110,21 @@ function Replace(button){
     const description = button.childNodes[7].childNodes[1];
     const cloneDescription = description.cloneNode(true);
 
+    const popupDotsContainer = popup.childNodes[1].childNodes[7];
+    const popupDots = popup.childNodes[1].childNodes[7].childNodes[1];
+    const dots = button.childNodes[9];
+    const cloneDots = dots.cloneNode(true);
+    cloneDots.classList.remove('hide_dot')
+    cloneDots.classList.add('low_opacity')
+    
+
     popupBackgroundContainer.replaceChild(cloneBackground, popupBackground);
     popupTitleContainer.replaceChild(cloneTitle, popupTitle);
     popupDescriptionContainer.replaceChild(cloneDescription, popupDescription);
+    popupDotsContainer.replaceChild(cloneDots, popupDots);
     tryer()
+    
+    currentBackground = button.childNodes[1].childNodes[1];
     fleshTryer()
 }
 
@@ -223,6 +243,7 @@ function closePopup(popup) {
     }
 
     function fleshTryer(){
+        console.log(currentBackground.parentNode)
         const rightBackground = currentBackground.nextSibling.nextSibling;
         
 
@@ -251,7 +272,6 @@ function closePopup(popup) {
         //need to go throgh all picitures and find out the right number of pitures 
         const item_grid = document.getElementById('item_grid');
         const dot = document.getElementById('dots_holder').childNodes[1];
-        console.log(dot) 
         
         const x = item_grid.childElementCount;   
         
@@ -271,6 +291,8 @@ function closePopup(popup) {
                 }
             }    
     }
+
+
 
     window.onload = function() {
         dotChecker();
