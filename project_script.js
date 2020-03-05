@@ -34,6 +34,7 @@ const rightFleshButton = document.getElementById('right_flesh')
 
 var currentCategory;
 var currentBackground;
+var num =1;
 
 
 function Open(button){
@@ -55,13 +56,24 @@ function Open(button){
     const cloneDots= dots.cloneNode(true);
     const popupDots = popup.childNodes[1].childNodes[7];
     cloneDots.classList.remove('reveal_dot')
-    cloneDots.classList.add('low_opacity')
+    opacityAdder(cloneDots);
+    
 
     popupBackground.appendChild(cloneBackground);      
     popupTitle.appendChild(cloneTitle);
     popupDescription.appendChild(cloneDescription);   
     popupDots.appendChild(cloneDots);
     openPopup(popup);
+}
+
+function opacityAdder(dots){
+    const x = dots.childElementCount;
+    for(let i = 1; i <= x; i++){
+        console.log(dots)
+        console.log(dots.childNodes[i])
+        dots.childNodes[i].classList.remove('high_opacity')
+        dots.childNodes[i].classList.add('low_opacity')
+    }
 }
 
 function Close(){
@@ -115,7 +127,7 @@ function Replace(button){
     const dots = button.childNodes[9];
     const cloneDots = dots.cloneNode(true);
     cloneDots.classList.remove('hide_dot')
-    cloneDots.classList.add('low_opacity')
+    opacityAdder(cloneDots);
     
 
     popupBackgroundContainer.replaceChild(cloneBackground, popupBackground);
@@ -149,6 +161,7 @@ openPopupButton.forEach(button => {
         currentBackground = currentCategory.childNodes[1].childNodes[1];
         tryer()
         fleshTryer()
+        dotOpacity()
     })
 })
 
@@ -179,12 +192,17 @@ function closePopup(popup) {
         const leftCategory = currentCategory.previousSibling.previousSibling; 
         currentCategory = leftCategory;     
         Replace(leftCategory)
+        num = 1;
+        dotOpacity()
+        
     }
 
     function rightClick(){
         const rightCategory = currentCategory.nextSibling.nextSibling;    
         currentCategory = rightCategory;  
         Replace(rightCategory)
+        num = 1;
+        dotOpacity()
     }
 
     leftButton.addEventListener('click', () => {  
@@ -196,17 +214,21 @@ function closePopup(popup) {
     })
 
     function leftFleshClick(){       
-        const leftCategory = currentBackground.previousSibling.previousSibling; 
-        currentBackground = leftCategory;     
-        innerReplace(leftCategory)
+        const leftBackground = currentBackground.previousSibling.previousSibling; 
+        currentBackground = leftBackground;     
+        innerReplace(leftBackground)
         fleshTryer()
+        num--;
+        dotOpacity()
     }
 
     function rightFleshClick(){
-        const rightCategory = currentBackground.nextSibling.nextSibling;    
-        currentBackground = rightCategory;  
-        innerReplace(rightCategory)
+        const rightBackground = currentBackground.nextSibling.nextSibling;    
+        currentBackground = rightBackground;  
+        innerReplace(rightBackground)
         fleshTryer()
+        num++;
+        dotOpacity()
     }
 
     leftFleshButton.addEventListener('click', () => {  
@@ -261,6 +283,7 @@ function closePopup(popup) {
         if(leftBackground == null)
         {
             leftFleshButton.classList.add('blocked')
+            
         }
         else{
             leftFleshButton.classList.remove('blocked')
@@ -292,8 +315,15 @@ function closePopup(popup) {
             }    
     }
 
-
+    function dotOpacity(){
+        const popup = document.getElementById('popup');
+        const popupDot = popup.childNodes[1].childNodes[7].childNodes[1].childNodes[num]; 
+        opacityAdder(popup.childNodes[1].childNodes[7].childNodes[1])
+        popupDot.classList.remove('low_opacity')  
+        popupDot.classList.add('high_opacity')    
+    }
 
     window.onload = function() {
+        
         dotChecker();
       };

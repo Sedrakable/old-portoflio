@@ -509,12 +509,12 @@ p {
 .popup_left{
     max-width: 1000px;
     display: flex;
-    position:relative !important;
+    position:relative;
 
 }
 
 .popup_background{
-    float: left;
+    /* float: left; */
     height: 100%;
     background-color: rgb(215, 216, 233);
     
@@ -625,12 +625,12 @@ p {
 }
 
 #right_arrow{
-    right: 15%;
+    right: 5%;
     
 }
 
 #left_arrow{
-    left: 15%;
+    left: 5%;
     transform: translate(0, -50%) rotate(180deg) scale(0);
 }
 
@@ -646,8 +646,8 @@ p {
     outline: none;
     border: none;
     position: absolute;
-    padding-top: 275px;
-    padding-bottom: 275px;
+    padding-top: 270px;
+    padding-bottom: 270px;
     /* left: 50%;
     top: 50%;
     transform: translate(-50%,-50%); */
@@ -666,7 +666,7 @@ p {
 }
 
 .flesh > img{
-    width: 50px;
+    height: 60px;
 }
 
 #right_flesh{
@@ -675,7 +675,8 @@ p {
 
 #left_flesh{
     left: 5%;
-    transform:rotate(180deg) ;
+    transform:rotate(180deg);
+   
 }
 
 
@@ -760,10 +761,12 @@ h3 {
     opacity: 1 ; 
 }
 
+
 .hide_dot{
     transition: 0.2s;
     opacity: 0;
 }
+
 
 
 #dots_holder{
@@ -771,7 +774,11 @@ h3 {
 }
 
 .low_opacity{
-    transition: 0.2s;
+    transition: 0s;
     opacity: 0.5;
+}
+
+.high_opacity{
+    opacity: 1;
 }
 
