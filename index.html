@@ -48,21 +48,25 @@
                     <div class="links">
                         <div class="logo_grid">
                             
-                            <div class="logo" id = discord style= "background-image:url(Logos/logo_background.png)">
-                                <a href="https://discord.gg/5E8JcK" style= "background-image:url(Logos/Discord-Logo-White.png)"></a> 
-                            </div>
-                            
-                            <div class="logo">
-                                <a href="https://facebook.com/sedrak13" style= "background-image:url(Logos/facebook_shadow.png)"></a> 
-                            </div>
-                            
-                            <div class="logo">
-                                <a href="https://vk.com/sedrakable" style= "background-image:url(Logos/vk_shadow.png)"></a>  
-                            </div>
-                            
-                            <div class="logo" style= "background-image:url(Logos/background_logo.png)">
-                                <a href="https://instagram.com/sedrakable/" style= "background-image:url(Logos/insta_shadow.png)"></a>  
-                            </div>                                                                      
+                            <a href="https://discord.gg/5E8JcK" class="logo" id = discord >
+                                <img  src="Logos/Discord_logo.png">
+                            </a>
+
+                            <a href="https://facebook.com/sedrak13" class="logo" id = discord >
+                                <img  src="Logos/facebook_logo.png">
+                            </a>
+
+                            <a href="https://vk.com/sedrakable" class="logo" id = discord >
+                                <img  src="Logos/vk_logo.png">
+                            </a>
+
+                            <a href="https://instagram.com/sedrakable" class="logo" id = discord >
+                                <img  src="Logos/Discord_logo.png">
+                            </a> 
+
+                            <a href="https://instagram.com/sedrakable" class="logo" id = discord >
+                                <img  src="Logos/Discord_logo.png">
+                            </a>                                                                
                             
                         </div>
                     </div>   
@@ -70,36 +74,5 @@
                 
             </div>
             
-            <div class="middle_grid">
-                <div class="about_grid">
-                    <div class="left_art">
-                        <img src="Pictures/used/me.png"></img>
-                    </div>
-                    <div class="about_text"> This is me bla bla bla bla bla blabla bla blabla bla bla
-                        bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla
-                        bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla
-                        bla bla blabla bla blabla bla blabla bla blabla bla blabla bla blabla bla bla!!!
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
-    <script>
-        const portfolio_items = document.querySelectorAll('.item')
-
-        portfolio_items.forEach(item => {
-            item.addEventListener('mouseout', () => {
-                console.log(item.childNodes[1].classList);
-                item.classList.remove('img_darken');
-                
-            })
-
-            item.addEventListener('mouseover', () => {
-                console.log(item.childNodes[1].classList);
-                item.classList.add('img_darken');
-                
-            })
-        })
-
-    </script>
+            <div class="footer"></div>
 </html>

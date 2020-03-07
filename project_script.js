@@ -1,8 +1,10 @@
 const Items = document.querySelectorAll('.item_wrapper');
+const popup = document.getElementById('popup');
 
         Items.forEach(item => {
                 
                 item.addEventListener('mouseout', () => {
+                    console.log(item)
                     item.childNodes[3].classList.remove('img_darken');
                     item.childNodes[3].classList.add('img_ligthen');  
                     item.childNodes[5].classList.remove('reveal_text');
@@ -38,7 +40,7 @@ var num =1;
 
 
 function Open(button){
-    const popup = document.getElementById('popup');
+    
         
     const background = button.childNodes[1].childNodes[1];
     const cloneBackground = background.cloneNode(true);
@@ -69,8 +71,6 @@ function Open(button){
 function opacityAdder(dots){
     const x = dots.childElementCount;
     for(let i = 1; i <= x; i++){
-        console.log(dots)
-        console.log(dots.childNodes[i])
         dots.childNodes[i].classList.remove('high_opacity')
         dots.childNodes[i].classList.add('low_opacity')
     }
@@ -265,7 +265,6 @@ function closePopup(popup) {
     }
 
     function fleshTryer(){
-        console.log(currentBackground.parentNode)
         const rightBackground = currentBackground.nextSibling.nextSibling;
         
 
@@ -300,7 +299,7 @@ function closePopup(popup) {
         
         for(let i = 1; i <= x; i++){
             const n = (2*i) -1;
-            const dotContainer = item_grid.childNodes[n].childNodes[9];       
+            const dotContainer = item_grid.childNodes[n].childNodes[9];   
             const y = item_grid.childNodes[n].childNodes[1].childElementCount;
             const dotClones = [dot.cloneNode(true)];
             
