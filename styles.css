@@ -1,7 +1,7 @@
 body {
     background-color: rgb(215, 216, 233);
     margin: 0px;
-    font-family: 'Oxygen', sans-serif;
+    font-family: 'Oxygen';
     height:auto;
 
 }
@@ -69,6 +69,27 @@ body {
     /* #f16841; */
 }
 
+.word{
+    font-family: 'Source Code Pro';
+    font-weight: 300 !important;
+    font-size: 60px;
+    color:  rgb(215, 216, 233);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+    padding-left: 30px;
+}
+
+#word{
+    font-family: 'Source Code Pro';
+    font-weight: 1000 !important;
+    color:  rgb(32, 35, 42);
+    background-color: rgb(245, 245, 245);
+    border-radius: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 
 
 
@@ -81,7 +102,7 @@ body {
     height: 600px;
     font-size: 1.3em;
     padding: 100px;
-    padding-left: 350px;
+    padding-left: 200px;
     padding-right: 350px;
 }
 
@@ -95,37 +116,32 @@ p {
 }
 
 .links {
-    width:  400px ;
-    height: 80px;
+    margin-top: 100px;
+    width:  300px ;
+    height: 60px;
     border-radius: 4px;
     background-color: rgb(32, 35, 42);
 }
 
 .logo_grid {
     display: grid;
-    grid-template-columns: 80px 80px 80px 80px 80px;
-    grid-template-rows: 80px;
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-template-rows: 60px;
     height: 100%;
-
 }
 
 
 .logo{
-    
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     margin: 10px;
-
 }
 
 .logo > img{
     position: relative;
-    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 100%;
+    height: 100%;
 }
 
 
@@ -723,7 +739,7 @@ p {
 }
 
 h1 {
-    font-weight: bold;
+    font-weight: normal;
     color: rgb(254,183,1);
 }
 
