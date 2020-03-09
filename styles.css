@@ -13,6 +13,14 @@ body {
 
 }
 
+.index_container {
+    background-color: rgb(40, 44, 52);
+    display: grid;
+    grid-template-columns: 1fr;
+    background-size: cover;
+
+}
+
 /* Navigation Bar */
 .nav_bar {
     position: sticky;
@@ -72,7 +80,7 @@ body {
 .word{
     font-family: 'Source Code Pro';
     font-weight: 300 !important;
-    font-size: 60px;
+    font-size: 40px;
     color:  rgb(215, 216, 233);
     margin-top: 10px;
     margin-bottom: 10px;
@@ -98,16 +106,36 @@ body {
 /* Middle Box */
 
 .top_grid {
-    background-color: rgb(40, 44, 52);
-    height: 600px;
+    z-index: 1;
+    
+    height: 800px;
     font-size: 1.3em;
-    padding: 100px;
     padding-left: 200px;
     padding-right: 350px;
 }
 
+#big{
+    z-index: 0;
+    position: absolute;
+    width: 600px;
+    padding-top: 100px;
+    padding-left: 1000px;
+}
 
+.hello_left_box{
+    z-index: 1;
+    padding-top: 100px;
+    /* border-bottom: solid 3px rgb(32, 35, 42); */
+    width: 650px;
+    padding-bottom: 40px;
+}
 
+.project_box{
+    z-index: 1;
+    padding-top: 100px;
+
+    
+}
 p {
     font-weight: normal;
     color:  rgb(215, 216, 233);
@@ -116,7 +144,8 @@ p {
 }
 
 .links {
-    margin-top: 100px;
+    
+    margin-top: 20px;
     width:  300px ;
     height: 60px;
     border-radius: 4px;
@@ -124,6 +153,7 @@ p {
 }
 
 .logo_grid {
+    
     display: grid;
     grid-template-columns: 60px 60px 60px 60px 60px;
     grid-template-rows: 60px;
@@ -722,6 +752,7 @@ p {
     background-color: rgb(32, 35, 42);
     width: 100%;
     height: 150px;
+    z-index: 3;
 }
 
 @keyframes change{
@@ -739,8 +770,9 @@ p {
 }
 
 h1 {
-    font-weight: normal;
+    font-weight: lighter;
     color: rgb(254,183,1);
+    font-size: 30px;
 }
 
 h3 {
