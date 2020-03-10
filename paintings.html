@@ -9,7 +9,10 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="container.css">
+    <link rel="stylesheet" href="nav_bar.css">
+    <link rel="stylesheet" href="category_main.css">
+    <link rel="stylesheet" href="footer.css">
     <script defer src="project_script.js"></script>
     <script defer src="drop_down.js"></script>
 </head>
@@ -53,23 +56,28 @@
             <div class="category_box">
                 <h1 id = categories>Painting Projects</h1>
                 <p>
-                    Drawing was a skill that I acquired throughout two semesters of my College jurney. I learned about visualization, sizing, lighting, shadows and plenty of other techniques. At the end of it all, I saw the world differently, noticing previously unseen visual details in a day to day life and just did something that I enjoyed.
+                    Painting is something I did when I was little, I even took weekly classes, but in never really followed me. The skill was mostly acquired through my college journey. Similar to drawing, I learned about visualization, sizing, lighting, shadows, types of strokes, color pallets and more. At the end of it all, I understood that the final product is less about detail and more about getting the feel of the scene. There definitely is more to come!
                 </p>
             </div>
             <div class = "category_background" style="background-image:url(Logos/painting_logo.png)"></div>
         </div>                   
         
+        
+        <div id="dots_holder">
+            <img class ='dot_img' src="Logos/Multi_logo.png"></img>
+        </div>
 
         <div class="item_grid" id= 'item_grid'>
 
             <div open-button="#popup" class="item_wrapper">
                 <div class="item_background_invis">
-                    <img src ="Pictures/Painting/lemons.jpg">
+                    <img src="Pictures/Drawing/wood.jpg">
+                    <img src="Pictures/Drawing/3_squares.jpg">
                 </div>
                 <div class="item_background">
                     <img src="Pictures/Drawing/wood_low.jpg">
                 </div>
-                <h3 id=item_title>Tree bark</h3>
+                <h3 id=item_title>Lemons on platter matisse</h3>
                 <div class="item_description_invis">
                     <div class="item_description">
                         <div class="popup_description">A small precise pencil drawing of a Tree Bark.</div>
@@ -84,7 +92,8 @@
 
             <div class="item_wrapper">
                 <div class="item_background_invis" id="invis">
-                    <img src ="Pictures/Painting/red_paper.jpg">
+                    <img src="Pictures/Drawing/pinecone.jpg">
+                    <img src="Pictures/Drawing/3_squares.jpg">
                 </div>
                 <div class="item_background">
                     <img src="Pictures/Drawing/pinecone_low.jpg">
@@ -103,8 +112,9 @@
             </div>
 
             <div class="item_wrapper">
-                <div class="item_background_invis">
-                     <img src ="Pictures/Painting/my_logo.jpg">         
+                <div class="item_background_invis">                
+                    <img src="Pictures/Drawing/metal.jpg">  
+                    <img src="Pictures/Drawing/3_squares.jpg">            
                 </div>
                 <div class="item_background">
                     <img src="Pictures/Drawing/metal_low.jpg">
@@ -122,10 +132,15 @@
                 </div>
             </div>
 
-        </div>
-        
-        <div class="popup" id='popup'>   
+            
 
+        </div>
+
+        <button class = "arrow" id=left_arrow>
+            <img src="Logos/arrow_big.png">
+        </button>
+
+        <div class="popup" id='popup'>          
             <div class="popup_left">
                 <div class="popup_background">
 
@@ -140,7 +155,6 @@
 
                 </div>
             </div>
-
             <div class="popup_right">
                 <div class="header">
                     <div class="title">
@@ -152,12 +166,12 @@
 
                 </div>
             </div>
-
         </div>
 
         <button class = "arrow" id=right_arrow>
             <img src="Logos/arrow_big.png">
         </button>
+
 
         <div id="overlay"></div>
 
