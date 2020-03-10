@@ -155,13 +155,14 @@ function innerReplace(button){
 
 
 openPopupButton.forEach(button => {
-    button.addEventListener('click', () => {  
+    button.addEventListener('click', () => { 
+        
         Open(button)    
         currentCategory = button;
         currentBackground = currentCategory.childNodes[1].childNodes[1];
         tryer()
         fleshTryer()
-        dotOpacity()
+        dotOpacity() 
     })
 })
 
@@ -169,7 +170,7 @@ openPopupButton.forEach(button => {
 closePopupButton.forEach(button => {
     button.addEventListener('click', () => {
         Close()
-        
+        num = 1;
     })
 })
 
@@ -305,8 +306,6 @@ function closePopup(popup) {
             
             
                 for(let i = 0; i < y; i++){
-                    
-                    
                     
                     dotContainer.appendChild(dotClones[i]); 
                     dotClones.push(dot.cloneNode(true))     

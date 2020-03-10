@@ -22,3 +22,5 @@ window.setInterval(function(){
     switchee()
     
   }, 200);
+
+  
