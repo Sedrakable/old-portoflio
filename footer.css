@@ -4,3 +4,51 @@
     height: 150px;
     z-index: 3;
 }
+
+.links {
+    width:  300px ;
+    height: 60px;
+    border-radius: 4px;
+    background-color: rgb(32, 35, 42);
+}
+
+.logo_grid {
+    
+    display: grid;
+    grid-template-columns: 60px 60px 60px 60px 60px;
+    grid-template-rows: 60px;
+    height: 100%;
+}
+
+
+.logo{
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+
+.logo > img{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+#footer_links{
+    display: table;
+    margin: auto;
+    /* margin-top: 50px; */
+}
+
+#email_container{
+    margin-top: 30px;
+    display: table;
+    margin: auto;
+}
+
+.email{
+    font-weight: 100;
+    font-size: 20px;
+    color:  rgb(245, 245, 245);
+    padding-top: 20px;
+}

@@ -1,17 +1,16 @@
 .top_grid {
     z-index: 1;
-    
-    height: 800px;
     font-size: 1.3em;
     padding-left: 200px;
     padding-right: 350px;
+    position: absolute;
 }
 
 #big{
+    padding-top: 100px;
     z-index: 0;
     position: absolute;
     width: 600px;
-    padding-top: 100px;
     padding-left: 1000px;
 }
 
@@ -34,7 +33,7 @@
     font-family: 'Source Code Pro';
     font-weight: 300 !important;
     font-size: 40px;
-    color:  rgb(215, 216, 233);
+    color:  rgb(245, 245, 245);
     margin-top: 10px;
     margin-bottom: 10px;
     line-height: 1.4em;
@@ -52,8 +51,6 @@
 }
 
 .links {
-    
-    margin-top: 20px;
     width:  300px ;
     height: 60px;
     border-radius: 4px;
@@ -80,5 +77,12 @@
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
+}
+
+.email{
+    font-weight: 100;
+    font-size: 20px;
+    color:  rgb(245, 245, 245);
+    padding-top: 20px;
 }
 

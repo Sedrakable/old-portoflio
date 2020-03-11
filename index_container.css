@@ -1,21 +1,28 @@
 .index_container {
     background-color: rgb(40, 44, 52);
-    display: grid;
-    grid-template-columns: 1fr;
+    position: relative;
     background-size: cover;
-
+    height: 100%;
 }
 
-body {
+ body {
     background-color: rgb(215, 216, 233);
     margin: 0px;
-    font-family: 'Oxygen';
-    height:auto;
-
+    font-family: 'Comfortaa', cursive;
+    height: 100%;
 }
+
+html{
+    height: 100%;
+}
+
 
 h1 {
     font-weight: lighter;
     color: rgb(254,183,1);
     font-size: 30px;
+}
+
+#background{
+    width: 100%;
 }

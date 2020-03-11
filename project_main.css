@@ -17,14 +17,17 @@
     justify-content: center;
     background-position: center;
     display: grid;
-    grid-template-rows: 360px;
+    height: 900px;
+    grid-template-rows: 360px ;
     grid-template-columns: 360px 360px 360px 360px;
     grid-gap: 100px;
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .category{
-    width: 100%;
+    width: 360px;
+    height: 360px;
     position: relative;
     /* z-index: -1; */
 }
