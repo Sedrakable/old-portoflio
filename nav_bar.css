@@ -61,6 +61,7 @@
     margin-top: 20px;
     display: grid;
     border-left: solid 3px rgb(254,183,1);
+    
     border-radius: 2px;
     width: 140px;
     grid-template-rows: 40px 40px 40px;

@@ -7,11 +7,11 @@
 }
 
 #big{
-    padding-top: 100px;
+    padding-top: 20px;
     z-index: 0;
     position: absolute;
-    width: 600px;
-    padding-left: 1000px;
+    height: 800px;
+    padding-left: 700px;
 }
 
 .hello_left_box{
