@@ -15,90 +15,97 @@
         <link rel="stylesheet" href="nav_bar.css">
         <link rel="stylesheet" href="index_main.css">
         <link rel="stylesheet" href="index_container.css">
-        <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="scroll.css">
         <script defer src="switcher.js"></script>
         <script defer src="drop_down.js"></script>
     </head>
     <body>
         <div class="index_container">
-            <div class="nav_bar" >
-                <div class="left_side">
-                    
-                    <div class="main_logo">
-                        <img src="Logos/my_logo_simple.png"></img>
-                    </div>
-                    
-                    <div class="button_wrapper active_button_wrapper">
-                        <a href="index.html">Home</a>
-                    </div>
-
-                    <div class="button_wrapper">
-                        <a href="about.html">About</a>
-                    </div>             
-                    
-                    <div class="button_wrapper">
-                        <a href="projects.html">Projects</a>
-                        <div class="drop_down" id = 'drop_down'>
-                            <a href="origami.html">Origami</a>
-                            <a href="drawings.html">Drawings</a>
-                            <a href="paintings.html">Painitings</a>
-                            <a href="sculptures.html">Sculptures</a>
-                            <a href="java.html">Java</a>
-                            <a href="pixel.html">Pixel Art</a>
-                            <a href="digital.html">Digital Art</a>
+            <div class="index_main">
+                <div class="nav_bar" >
+                    <div class="left_side">
+                        
+                        <div class="main_logo">
+                            <img src="Logos/my_logo_simple.png"></img>
                         </div>
-                    </div> 
+                        
+                        <div class="button_wrapper active_button_wrapper">
+                            <a href="index.html">Home</a>
+                        </div>
+        
+                        <div class="button_wrapper">
+                            <a href="about.html">About</a>
+                        </div> 
+                        
+                        <div class="button_wrapper">
+                            <div class="button_and_arrow">
+                                <div class="link">
+                                    <a href="projects.html">Projects</a>
+                                </div>               
+                                <button id="bottom_arrow">
+                                    <img src = 'Logos/bottom_arrow.png'>
+                                </button>  
+                            </div>
+                            <div class="drop_down" id = 'drop_down'>
+                                <a href="origami.html">Origami</a>
+                                <a href="drawings.html">Drawings</a>
+                                <a href="paintings.html">Painitings</a>
+                                <a href="sculptures.html">Sculptures</a>
+                                <a href="java.html">Java</a>
+                                <a href="pixel.html">Pixel Art</a>
+                                <a href="digital.html">Digital Art</a>
+                            </div>
+                        </div> 
+                        
+                        
+                    </div>
                     
-                    <button id="bottom_arrow">
-                        <img src = 'Logos/bottom_arrow.png'>
-                    </button>
                 </div>
                 
-            </div>
-            
-            <div class="top_grid">
-                    
+                <div class="top_grid">
+                        
 
 
-                    <div class="hello_left_box" id = word_container>
-                        <h1>Hello World, welcome to Sedrak's Portfolio</h1>
-                        <span class= "word" id ="word">|</span>
-                        <span class= "word" >hard or go home</span>
-                    </div>
-
-                    <div class="links">
-                        <div class="logo_grid">
-                            
-                            <a href="https://discord.gg/5E8JcK" class="logo" id = discord >
-                                <img  src="Logos/Discord_logo.png">
-                            </a>
-
-                            <a href="https://facebook.com/sedrak13" class="logo" id = discord >
-                                <img  src="Logos/facebook_logo.png">
-                            </a>
-
-                            <a href="https://vk.com/sedrakable" class="logo" id = discord >
-                                <img  src="Logos/vk_logo.png">
-                            </a>
-
-                            <a href="https://instagram.com/sedrakable" class="logo" id = discord >
-                                <img  src="Logos/instagram_logo.png">
-                            </a> 
-
-                            <a href="https://github.com/Sedrakable" class="logo" id = discord >
-                                <img  src="Logos/git_logo.png">
-                            </a>                                                                
-                            
+                        <div class="hello_left_box" id = word_container>
+                            <h1>Hello World, welcome to Sedrak's Portfolio</h1>
+                            <span class= "word" id ="word">|</span>
+                            <span class= "word" >hard or go home</span>
                         </div>
 
-                        <div class="email">sedrak005@gmail.com</div>
-                    </div>   
+                        <div class="links">
+                            <div class="logo_grid">
+                                
+                                <a href="https://discord.gg/5E8JcK" class="logo" id = discord >
+                                    <img  src="Logos/Discord_logo.png">
+                                </a>
+
+                                <a href="https://facebook.com/sedrak13" class="logo" id = discord >
+                                    <img  src="Logos/facebook_logo.png">
+                                </a>
+
+                                <a href="https://vk.com/sedrakable" class="logo" id = discord >
+                                    <img  src="Logos/vk_logo.png">
+                                </a>
+
+                                <a href="https://instagram.com/sedrakable" class="logo" id = discord >
+                                    <img  src="Logos/instagram_logo.png">
+                                </a> 
+
+                                <a href="https://github.com/Sedrakable" class="logo" id = discord >
+                                    <img  src="Logos/git_logo.png">
+                                </a>                                                                
+                                
+                            </div>
+
+                            <div class="email">sedrak005@gmail.com</div>
+                        </div>   
+                    
+                </div>
+
+                <img  id = 'big_white' src="Logos/white_background.png">
+                <img  id = 'big' src="Logos/Big_logo.png">
                 
             </div>
-
-            <img  id = 'big' src="Logos/Big_logo_01.png">
-
-            <!-- <img  id = 'background' src="Pictures/grid_background.png"> -->
         </div>
             
 </html>

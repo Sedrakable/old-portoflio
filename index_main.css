@@ -1,9 +1,12 @@
+
+
 .top_grid {
     z-index: 1;
     font-size: 1.3em;
     padding-left: 200px;
     padding-right: 350px;
     position: absolute;
+    
 }
 
 #big{
@@ -11,7 +14,15 @@
     z-index: 0;
     position: absolute;
     height: 800px;
-    padding-left: 700px;
+    padding-left: 1000px;
+}
+
+#big_white{
+    z-index: 0;
+    position: fixed;
+    height: 2400px;
+    transform: translate(-1000px,-625px);
+   
 }
 
 .hello_left_box{
@@ -84,5 +95,10 @@
     font-size: 20px;
     color:  rgb(245, 245, 245);
     padding-top: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 

@@ -13,29 +13,37 @@
     <link rel="stylesheet" href="nav_bar.css">
     <link rel="stylesheet" href="category_main.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="scroll.css">
     <script defer src="project_script.js"></script>
     <script defer src="drop_down.js"></script>
 </head>
 
 <body>
     <div class="container">
-        <div class="nav_bar">
+        <div class="nav_bar" >
             <div class="left_side">
-
+                
                 <div class="main_logo">
                     <img src="Logos/my_logo_simple.png"></img>
                 </div>
-
+                
                 <div class="button_wrapper ">
                     <a href="index.html">Home</a>
                 </div>
 
                 <div class="button_wrapper">
                     <a href="about.html">About</a>
-                </div>
-
+                </div> 
+                
                 <div class="button_wrapper active_button_wrapper">
-                    <a href="projects.html">Projects</a>
+                    <div class="button_and_arrow">
+                        <div class="link">
+                            <a href="projects.html">Projects</a>
+                        </div>               
+                        <button id="bottom_arrow">
+                            <img src = 'Logos/bottom_arrow.png'>
+                        </button>  
+                    </div>
                     <div class="drop_down" id = 'drop_down'>
                         <a href="origami.html">Origami</a>
                         <a href="drawings.html">Drawings</a>
@@ -47,11 +55,9 @@
                     </div>
                 </div> 
                 
-                <button id="bottom_arrow">
-                    <img src = 'Logos/bottom_arrow.png'>
-                </button>
+                
             </div>
-
+            
         </div>
 
 
@@ -151,9 +157,38 @@
         <div id="overlay"></div>
 
         <div class="footer">
+            <div id="email_container">
+                <div class="email">sedrak005@gmail.com</div>
+            </div>
+            
+            <div id="footer_links">
+                <div class="links">
+                    <div class="logo_grid">
+                        
+                        <a href="https://discord.gg/5E8JcK" class="logo" id = discord >
+                            <img  src="Logos/Discord_logo.png">
+                        </a>
 
-        </div>
+                        <a href="https://facebook.com/sedrak13" class="logo" id = discord >
+                            <img  src="Logos/facebook_logo.png">
+                        </a>
 
+                        <a href="https://vk.com/sedrakable" class="logo" id = discord >
+                            <img  src="Logos/vk_logo.png">
+                        </a>
+
+                        <a href="https://instagram.com/sedrakable" class="logo" id = discord >
+                            <img  src="Logos/instagram_logo.png">
+                        </a> 
+
+                        <a href="https://github.com/Sedrakable" class="logo" id = discord >
+                            <img  src="Logos/git_logo.png">
+                        </a>                                                                
+                        
+                    </div>
+                </div>
+            </div>
+        </div>    
     </div>
 </body>
 

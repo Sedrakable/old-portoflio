@@ -32,7 +32,7 @@
 
 .button_wrapper {
     height: 22px;
-    max-width: 80px;
+    max-width: 120px;
 }
 
 .button_wrapper a {
@@ -54,22 +54,20 @@
     /* #f16841; */
 }
 
+.button_and_arrow{
+    display: flex;
+}
+
 .drop_down{
-    
     z-index: 10;
-    /* left: 50%; */
     margin-top: 20px;
     display: grid;
-    border-left: solid 3px rgb(254,183,1);
-    
-    border-radius: 2px;
-    width: 140px;
-    grid-template-rows: 40px 40px 40px;
+    border-bottom: solid 4px rgb(254,183,1);
+    /* border-radius: 2px; */
+    width: 160px; 
     background-color: rgb(245, 245, 245);
-    /* border: solid 3px rgb(254,183,1); */
     font-size: 16px;
-    font-weight: 200;
-    transform: scale(0);
+    transform: translateX(-20px) scale(0);
 }
 
 
@@ -84,7 +82,7 @@
 }
 
 .show_drop{
-    transform: scale(1);
+    transform: translateX(-20px) scale(1);
 }
 
 
@@ -93,7 +91,8 @@
     background: none;
     outline: none;
     border: none;
-    padding-top: 14px;
+    padding-top: 4px;
+    padding-left: 4px;
     width: 20px;
     height: 100%;
 }

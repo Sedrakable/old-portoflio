@@ -13,11 +13,13 @@
         <link rel="stylesheet" href="nav_bar.css">
         <link rel="stylesheet" href="category_main.css">
         <link rel="stylesheet" href="footer.css">
+        <link rel="stylesheet" href="scroll.css">
         <script defer src="project_script.js"></script>
         <script defer src="drop_down.js"></script>
     </head>
     <body>
         <div class="container">
+                
             <div class="nav_bar" >
                 <div class="left_side">
                     
@@ -28,13 +30,20 @@
                     <div class="button_wrapper ">
                         <a href="index.html">Home</a>
                     </div>
-
+    
                     <div class="button_wrapper">
                         <a href="about.html">About</a>
                     </div> 
                     
                     <div class="button_wrapper active_button_wrapper">
-                        <a href="projects.html">Projects</a>
+                        <div class="button_and_arrow">
+                            <div class="link">
+                                <a href="projects.html">Projects</a>
+                            </div>               
+                            <button id="bottom_arrow">
+                                <img src = 'Logos/bottom_arrow.png'>
+                            </button>  
+                        </div>
                         <div class="drop_down" id = 'drop_down'>
                             <a href="origami.html">Origami</a>
                             <a href="drawings.html">Drawings</a>
@@ -46,14 +55,11 @@
                         </div>
                     </div> 
                     
-                    <button id="bottom_arrow">
-                        <img src = 'Logos/bottom_arrow.png'>
-                    </button>  
+                    
                 </div>
                 
             </div>
 
-            
                 <div class="category_description" >
                     <div class="category_box">
                         <h1 id = categories>Origami Projects</h1>
@@ -76,14 +82,14 @@
                             <img src="Pictures/Origami/blue_origami.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/blue_origami_low.jpg">
+                            <img src="Pictures/Origami_low/blue_origami.jpg">
                         </div>
                         <h3 id=item_title>Tri Snowflake</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A small precise pencil drawing of a Tree Bark.</div>
+                                <div class="popup_description">An 8 corner star shape that increases in size coming from the middle. This is Tessellation made with one square piece of paper.</div>
                                 <div class="popup_size">Size: 10cm x 10cm</div>
-                                <div class="popup_date">Date: 2012</div>
+                                <div class="popup_date">Date: ~2012</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -96,14 +102,14 @@
                             <img src="Pictures/Origami/Cactus.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Cactus_low.jpg">
+                            <img src="Pictures/Origami_low/Cactus.jpg">
                         </div>
                         <h3 id=item_title>Cactus</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A small precise pencil drawing of a Pinecone part.</div>
-                                <div class="popup_size">Size: 6cm x 6cm</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A Cactus in a pot. This is made with one 1x2 rectangle piece of paper, which uses some Tessellation techniques.</div>
+                                <div class="popup_size">Size: 7.5cm x 3cm x 3cm</div>
+                                <div class="popup_date">Date: ~2014</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -117,14 +123,14 @@
                             <img src="Pictures/Origami/Celtic_2.jpg">          
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Celtic_low.jpg">
+                            <img src="Pictures/Origami_low/Celtic.jpg">
                         </div>
-                        <h3 id=item_title>Celtic</h3>
+                        <h3 id=item_title>Celtic Circle</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A small precise pencil drawing of a Tin Foil piece.</div>
-                                <div class="popup_size">Size: 6cm x 6cm</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A clean hexagon-shaped pattern. This is a Tesselation made with one Hexagon shaped piece of paper.</div>
+                                <div class="popup_size">Size: 19cm x 16cm</div>
+                                <div class="popup_date">Date: ~2016</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -138,14 +144,14 @@
                             <img src="Pictures/Origami/Circle_shell_2.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Circle_shell_low.jpg">
+                            <img src="Pictures/Origami_low/Circle_shell.jpg">
                         </div>
-                        <h3 id=item_title>Circle Shell</h3>
+                        <h3 id=item_title>Round Shell Stack</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A round shell shaped pattern stacked on itself that increases in size coming from the middle. This is Tessellation made with one square piece of paper. </div>
+                                <div class="popup_size">Size: 8cm x 8cm x 2cm</div>
+                                <div class="popup_date">Date: ~2013</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -158,14 +164,14 @@
                             <img src="Pictures/Origami/Crown.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Crown_low.jpg">
+                            <img src="Pictures/Origami_low/Crown.jpg">
                         </div>
                         <h3 id=item_title>Crown</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A round 3D crown made out of one hexagon-shaped piece of paper.</div>
+                                <div class="popup_size">Size: 6.5cm x 6.5cm x 6cm</div>
+                                <div class="popup_date">Date: ~2012</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -178,14 +184,14 @@
                             <img src="Pictures/Origami/Dragon.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Dragon_low.jpg">
+                            <img src="Pictures/Origami_low/Dragon.jpg">
                         </div>
                         <h3 id=item_title>Dragon</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A Four-Legged Chinese Dragon made out of a 2 by 1 rectangle.</div>
+                                <div class="popup_size">Size: 8cm x 10cm x 2cm</div>
+                                <div class="popup_date">Date: ~2013</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -198,14 +204,14 @@
                             <img src="Pictures/Origami/Fish.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Fish_low.jpg">
+                            <img src="Pictures/Origami_low/Fish.jpg">
                         </div>
                         <h3 id=item_title>Fish</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A Fish made out of one square piece of paper using some Tessellation techniques to make the scales.</div>
+                                <div class="popup_size">Size: 11cm x 6.5cm x 5.5cm</div>
+                                <div class="popup_date">Date: ~2012</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -218,14 +224,14 @@
                             <img src="Pictures/Origami/Frog.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Frog_low.jpg">
+                            <img src="Pictures/Origami_low/Frog.jpg">
                         </div>
                         <h3 id=item_title>Frog</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A Frog made out of a square piece of paper.</div>
+                                <div class="popup_size">Size: 11cm x 8.5cm x 2cm</div>
+                                <div class="popup_date">Date: ~2012</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -238,14 +244,14 @@
                             <img src="Pictures/Origami/Greek_Icosahedron.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Greek_low.jpg">
+                            <img src="Pictures/Origami_low/Greek_Icosahedron.jpg">
                         </div>
                         <h3 id=item_title>Greek Icosahedron</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A modular origami, using 20 small square pieces of paper to make an Icosahedron with a line pattern.</div>
+                                <div class="popup_size">Size: 6cm x 6.2cm x 6.7cm</div>
+                                <div class="popup_date">Date: ~2015</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -258,14 +264,14 @@
                             <img src="Pictures/Origami/Hawk_horse.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Hawk_horse_low.jpg">
+                            <img src="Pictures/Origami_low/Hawk_horse.jpg">
                         </div>
                         <h3 id=item_title>Hawk Horse</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A 3D half Hawk, half Horse made out of one square piece of paper.</div>
+                                <div class="popup_size">Size: 8cm x 8.5cm x 3cm</div>
+                                <div class="popup_date">Date: ~2012</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -278,14 +284,14 @@
                             <img src="Pictures/Origami/Jester.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Jester_low.jpg">
+                            <img src="Pictures/Origami_low/Jester.jpg">
                         </div>
                         <h3 id=item_title>Jester</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A 2D jester made out of one square piece of paper.</div>
+                                <div class="popup_size">Size: 8.5cm x 9cm</div>
+                                <div class="popup_date">Date: ~2012</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -298,14 +304,14 @@
                             <img src="Pictures/Origami/Lion.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Lion_low.jpg">
+                            <img src="Pictures/Origami_low/Lion.jpg">
                         </div>
                         <h3 id=item_title>Lion</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A 3D lion made out of one square piece of paper.</div>
+                                <div class="popup_size">Size: 10cm x 6cm x 3cm</div>
+                                <div class="popup_date">Date: 2012</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -318,14 +324,14 @@
                             <img src="Pictures/Origami/Lizzard.jpg">
                         </div>
                         <div class="item_background">  
-                            <img src="Pictures/Origami/Lizzard_low.jpg">
+                            <img src="Pictures/Origami_low/Lizzard.jpg">
                         </div>
-                        <h3 id=item_title>Lizzard</h3>
+                        <h3 id=item_title>Lizzard and Fly</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A Lizzard and a Fly on a wall, made out of one square piece of paper with tessellation techniques.</div>
+                                <div class="popup_size">Size: 16.5cm x 15cm</div>
+                                <div class="popup_date">Date: 2012</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -338,14 +344,14 @@
                             <img src="Pictures/Origami/Pigion.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Pigion_low.jpg">
+                            <img src="Pictures/Origami_low/Pigion.jpg">
                         </div>
-                        <h3 id=item_title>Pigion</h3>
+                        <h3 id=item_title>Baby Pigion</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A Baby Pigeon, made out of one square piece of paper.</div>
+                                <div class="popup_size">Size: 15cm x 8cm x 5cm</div>
+                                <div class="popup_date">Date: 2012</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -358,14 +364,14 @@
                             <img src="Pictures/Origami/Rat.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Rat_low.jpg">
+                            <img src="Pictures/Origami_low/Rat.jpg">
                         </div>
                         <h3 id=item_title>Rat</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A big nose rat, made out of one square piece of paper.</div>
+                                <div class="popup_size">Size: 15cm x 8cm x 4cm</div>
+                                <div class="popup_date">Date: 2012</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -378,14 +384,14 @@
                             <img src="Pictures/Origami/Scorpion.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Scorpion_low.jpg">
+                            <img src="Pictures/Origami_low/Scorpion.jpg">
                         </div>
                         <h3 id=item_title>Scorpion</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A scorpion, made out of 1 square piece of paper.</div>
+                                <div class="popup_size">Size: 8cm x 4cm x 6cm</div>
+                                <div class="popup_date">Date: ~2012</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -398,14 +404,14 @@
                             <img src="Pictures/Origami/Self_fold.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Self_fold_low.jpg">
+                            <img src="Pictures/Origami_low/Self_fold.jpg">
                         </div>
                         <h3 id=item_title>Self Folding Origami</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">4 arms folding paper, made out of one square piece of paper.</div>
+                                <div class="popup_size">Size: 8.7cm x 8.7cm x 2cm</div>
+                                <div class="popup_date">Date: ~2012</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -418,14 +424,14 @@
                             <img src="Pictures/Origami/Shell.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Shell_low.jpg">
+                            <img src="Pictures/Origami_low/Shell.jpg">
                         </div>
-                        <h3 id=item_title>Shell</h3>
+                        <h3 id=item_title>Spiral Shell</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A spiral shell, made out of one square piece of paper.</div>
+                                <div class="popup_size">Size: 10cm x 6.5cm</div>
+                                <div class="popup_date">Date: ~2012</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -438,14 +444,14 @@
                             <img src="Pictures/Origami/Spider.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Spider_low.jpg">
+                            <img src="Pictures/Origami_low/Spider.jpg">
                         </div>
-                        <h3 id=item_title>Spider</h3>
+                        <h3 id=item_title>Flat Spider</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A 2d spider, made out of 2 color square piece of paper.</div>
+                                <div class="popup_size">Size: 7cm x 7cm</div>
+                                <div class="popup_date">Date: ~2012</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -459,14 +465,14 @@
                             <img src="Pictures/Origami/Turtle_2.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Turtle_low.jpg">
+                            <img src="Pictures/Origami_low/Turtle.jpg">
                         </div>
                         <h3 id=item_title>Turtle Tessellation</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">An original tessellation that uses a hexagon-shaped piece of paper.</div>
+                                <div class="popup_size">Size: 28cm x 25cm</div>
+                                <div class="popup_date">Date: 2017</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -479,14 +485,14 @@
                             <img src="Pictures/Origami/Yoda.jpg">
                         </div>
                         <div class="item_background">
-                            <img src="Pictures/Origami/Yoda_low.jpg">
+                            <img src="Pictures/Origami_low/Yoda.jpg">
                         </div>
                         <h3 id=item_title>Yoda</h3>
                         <div class="item_description_invis">
                             <div class="item_description">
-                                <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
-                                <div class="popup_size">Size: 30'' x 40''</div>
-                                <div class="popup_date">Date: 2018</div>
+                                <div class="popup_description">A Star Wars Yoda, made out of 2 color square piece of paper.</div>
+                                <div class="popup_size">Size: 8cm x 4cm x 2cm</div>
+                                <div class="popup_date">Date: 2012</div>
                             </div>
                         </div>
                         <div class="dots hide_dot">
@@ -535,42 +541,42 @@
                 </button>
         
                 <div id="overlay"></div>
-        
-                <div class="footer">
-                    <div id="email_container">
-                        <div class="email">sedrak005@gmail.com</div>
-                    </div>
-                    
-                    <div id="footer_links">
-                        <div class="links">
-                            <div class="logo_grid">
-                                
-                                <a href="https://discord.gg/5E8JcK" class="logo" id = discord >
-                                    <img  src="Logos/Discord_logo.png">
-                                </a>
-        
-                                <a href="https://facebook.com/sedrak13" class="logo" id = discord >
-                                    <img  src="Logos/facebook_logo.png">
-                                </a>
-        
-                                <a href="https://vk.com/sedrakable" class="logo" id = discord >
-                                    <img  src="Logos/vk_logo.png">
-                                </a>
-        
-                                <a href="https://instagram.com/sedrakable" class="logo" id = discord >
-                                    <img  src="Logos/instagram_logo.png">
-                                </a> 
-        
-                                <a href="https://github.com/Sedrakable" class="logo" id = discord >
-                                    <img  src="Logos/git_logo.png">
-                                </a>                                                                
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>  
-                
+       
         </div>
+
+        <div class="footer">
+            <div id="email_container">
+                <div class="email">sedrak005@gmail.com</div>
+            </div>
+            
+            <div id="footer_links">
+                <div class="links">
+                    <div class="logo_grid">
+                        
+                        <a href="https://discord.gg/5E8JcK" class="logo" id = discord >
+                            <img  src="Logos/Discord_logo.png">
+                        </a>
+
+                        <a href="https://facebook.com/sedrak13" class="logo" id = discord >
+                            <img  src="Logos/facebook_logo.png">
+                        </a>
+
+                        <a href="https://vk.com/sedrakable" class="logo" id = discord >
+                            <img  src="Logos/vk_logo.png">
+                        </a>
+
+                        <a href="https://instagram.com/sedrakable" class="logo" id = discord >
+                            <img  src="Logos/instagram_logo.png">
+                        </a> 
+
+                        <a href="https://github.com/Sedrakable" class="logo" id = discord >
+                            <img  src="Logos/git_logo.png">
+                        </a>                                                                
+                        
+                    </div>
+                </div>
+            </div>
+        </div>  
     </body>
     
 </html>

@@ -2,7 +2,7 @@ body {
     background-color: rgb(215, 216, 233);
     margin: 0px;
     font-family: 'Comfortaa', cursive;
-    height:1000px;
+    height:100%px;
     position: relative;
 }
 
@@ -10,7 +10,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     background-size: cover;
-
+    min-height: 100%;
 }
 
 h1 {

@@ -1,7 +1,12 @@
+.project_main{
+    height: 1200px;
+}
+
 .project_description{
     background-color: rgb(40, 44, 52);
     height: fit-content;
     font-size: 1.3em;
+    padding-top: 40px;
     padding-bottom: 40px;
     padding-left: 350px;
     padding-right: 350px;

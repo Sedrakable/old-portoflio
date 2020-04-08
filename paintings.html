@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="nav_bar.css">
     <link rel="stylesheet" href="category_main.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="scroll.css">
     <script defer src="project_script.js"></script>
     <script defer src="drop_down.js"></script>
 </head>
@@ -35,7 +36,14 @@
                 </div> 
                 
                 <div class="button_wrapper active_button_wrapper">
-                    <a href="projects.html">Projects</a>
+                    <div class="button_and_arrow">
+                        <div class="link">
+                            <a href="projects.html">Projects</a>
+                        </div>               
+                        <button id="bottom_arrow">
+                            <img src = 'Logos/bottom_arrow.png'>
+                        </button>  
+                    </div>
                     <div class="drop_down" id = 'drop_down'>
                         <a href="origami.html">Origami</a>
                         <a href="drawings.html">Drawings</a>
@@ -47,9 +55,7 @@
                     </div>
                 </div> 
                 
-                <button id="bottom_arrow">
-                    <img src = 'Logos/bottom_arrow.png'>
-                </button>  
+                
             </div>
             
         </div>
@@ -74,13 +80,15 @@
 
             <div open-button="#popup" class="item_wrapper">
                 <div class="item_background_invis">
-                    <img src="Pictures/Drawing/wood.jpg">
-                    <img src="Pictures/Drawing/3_squares.jpg">
+                    <img src="Pictures/Painting/my_logo.jpg">
+                    <img src="Pictures/Painting/my_logo_1.jpg">
+                    <img src="Pictures/Painting/my_logo_2.jpg">
+                    <img src="Pictures/Painting/my_logo_3.jpg">
                 </div>
                 <div class="item_background">
-                    <img src="Pictures/Drawing/wood_low.jpg">
+                    <img src="Pictures/Painting_low/my_logo.jpg">
                 </div>
-                <h3 id=item_title>Lemons on platter matisse</h3>
+                <h3 id=item_title>My Logo</h3>
                 <div class="item_description_invis">
                     <div class="item_description">
                         <div class="popup_description">A small precise pencil drawing of a Tree Bark.</div>
@@ -95,13 +103,12 @@
 
             <div class="item_wrapper">
                 <div class="item_background_invis" id="invis">
-                    <img src="Pictures/Drawing/pinecone.jpg">
-                    <img src="Pictures/Drawing/3_squares.jpg">
+                    <img src="Pictures/Painting/lemons.jpg">
                 </div>
                 <div class="item_background">
-                    <img src="Pictures/Drawing/pinecone_low.jpg">
+                    <img src="Pictures/Painting_low/lemons.jpg">
                 </div>
-                <h3 id=item_title>Pinecone</h3>
+                <h3 id=item_title>Lemons on platter (Matisse)</h3>
                 <div class="item_description_invis">
                     <div class="item_description">
                         <div class="popup_description">A small precise pencil drawing of a Pinecone part.</div>
@@ -116,13 +123,12 @@
 
             <div class="item_wrapper">
                 <div class="item_background_invis">                
-                    <img src="Pictures/Drawing/metal.jpg">  
-                    <img src="Pictures/Drawing/3_squares.jpg">            
+                    <img src="Pictures/Painting/red_paper.jpg">
                 </div>
                 <div class="item_background">
-                    <img src="Pictures/Drawing/metal_low.jpg">
+                    <img src="Pictures/Painting_low/red_paper.jpg">
                 </div>
-                <h3 id=item_title>Tin Foil</h3>
+                <h3 id=item_title>Red Crumpled Paper</h3>
                 <div class="item_description_invis">
                     <div class="item_description">
                         <div class="popup_description">A small precise pencil drawing of a Tin Foil piece.</div>
@@ -178,7 +184,39 @@
 
         <div id="overlay"></div>
 
-        <div class="footer"></div>
+        <div class="footer">
+            <div id="email_container">
+                <div class="email">sedrak005@gmail.com</div>
+            </div>
+            
+            <div id="footer_links">
+                <div class="links">
+                    <div class="logo_grid">
+                        
+                        <a href="https://discord.gg/5E8JcK" class="logo" id = discord >
+                            <img  src="Logos/Discord_logo.png">
+                        </a>
+
+                        <a href="https://facebook.com/sedrak13" class="logo" id = discord >
+                            <img  src="Logos/facebook_logo.png">
+                        </a>
+
+                        <a href="https://vk.com/sedrakable" class="logo" id = discord >
+                            <img  src="Logos/vk_logo.png">
+                        </a>
+
+                        <a href="https://instagram.com/sedrakable" class="logo" id = discord >
+                            <img  src="Logos/instagram_logo.png">
+                        </a> 
+
+                        <a href="https://github.com/Sedrakable" class="logo" id = discord >
+                            <img  src="Logos/git_logo.png">
+                        </a>                                                                
+                        
+                    </div>
+                </div>
+            </div>
+        </div>    
     </div>
 </body>
 
