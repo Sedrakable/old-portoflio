@@ -1,19 +1,115 @@
 .about_main{
-    padding: 200px;
-    height: 400px;
 
-    display: flex;
+    height: max-content;
+
+    display: block;
     
 }
 
+.my_pic {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    text-align: center;
+    
+    
+}
 .my_pic >img{
-    height: 400px;
-    width: 400px;
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0% 30%;
+    
+}
+
+.name {
+    position: absolute;
+    top: 500px;
+    left: 320px;
+    text-align: left;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    font-size: 3em;
+    color: rgb(245, 245, 245);
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 120px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.grid_item>img {
+    
+    position: absolute;
+    height: 100%;
+    width: 100%; 
+    object-fit: cover;
+    
+    
+}
+
+.grid_item {
+    position: relative;
+    height: 450px;
+    width: 750px; 
+    margin-bottom: 128px;
 }
 
 
-.my_description{
-    height: fit-content;
-    width: 500px;
-    padding: 200px;
+.grid_background{
+    z-index: -1;
+    outline-width: 10px;
+    background-color: rgb(216, 4, 4);
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.grid_background::after{
+    content: '';
+    position: absolute;
+    top: calc(-1 *10px);
+    left: calc(-1 *10px);
+    height: calc(100% + 10px *2);
+    width: calc(100% + 10px *2);
+    background: linear-gradient(-30deg,rgb(254,204,0),rgb(254,204,0),rgb(254,204,0),rgb(244,108,1),rgb(244,108,1),rgb(244,108,1));
+    z-index: -1;
+    animation: change 8s ease-in-out infinite;
+    background-size: 600% 600%;
+}
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.info{
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.title{
+    width: 100%;
+    font-weight: 900;
+    font-size: 2em;
+    color: rgb(244,108,1);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.message{
+
 }

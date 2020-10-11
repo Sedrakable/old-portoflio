@@ -1,36 +1,92 @@
-
+.index_main{
+    height: 100%;
+}
 
 .top_grid {
-    z-index: 1;
+    position: absolute;
     font-size: 1.3em;
-    padding-left: 200px;
-    padding-right: 350px;
-    position: absolute;
+    padding-left: 0px;
+    height: 100%;
+    width: 40%;
+    background-color:  rgb(216, 216, 233);
+}
+
+#main_logo{
     
+    width: 100%;
+    height: 580px;
+    text-align: center;
 }
 
-#big{
-    padding-top: 20px;
-    z-index: 0;
+
+
+.big{
+    
     position: absolute;
-    height: 800px;
-    padding-left: 1000px;
-}
+    width: 460px;
+    height: auto;
+    display: block;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-60%);
 
+}
 #big_white{
     z-index: 0;
     position: fixed;
     height: 2400px;
-    transform: translate(-1000px,-625px);
+    transform: translate(-1000px,-250px);
    
 }
 
+#big_back{
+    width: 461px;
+    height: auto;
+}
+
+
+
+#orange{
+
+    position: absolute;
+    
+    width: 458px;
+    height: 458px;
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(-30deg,rgb(254,204,0),rgb(254,204,0),rgb(254,204,0),rgb(244,108,1),rgb(244,108,1),rgb(244,108,1));
+    animation: change 5s ease-in-out infinite;
+    background-size: 600% 600%;
+}
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+
 .hello_left_box{
+    
+    margin-top: 120px;
     z-index: 1;
-    padding-top: 100px;
-    /* border-bottom: solid 3px rgb(32, 35, 42); */
-    width: 650px;
-    padding-bottom: 40px;
+    width: 100%;
+    height: 116px !important;
+    padding: 30px;
+    border-right: 6px solid rgb(254,183,1);
+    background-color:rgb(32, 35, 42) ;
+    
 }
 
 .project_box{
@@ -40,20 +96,20 @@
     
 }
 
-.word{
-    font-family: 'Source Code Pro';
-    font-weight: 300 !important;
-    font-size: 40px;
-    color:  rgb(245, 245, 245);
+.orange_text{ 
+    font-weight: lighter;
+    font-size: 32px;
+    color:  rgb(254,183,1);
     margin-top: 10px;
     margin-bottom: 10px;
     line-height: 1.4em;
-    padding-left: 30px;
+    
 }
 
 #word{
     font-family: 'Source Code Pro';
     font-weight: 1000 !important;
+    font-size: 50px  !important;
     color:  rgb(32, 35, 42);
     background-color: rgb(245, 245, 245);
     border-radius: 2px;

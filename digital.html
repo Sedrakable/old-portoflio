@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8" />
+    <title>Page Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="container.css">
+    <link rel="stylesheet" href="nav_bar.css">
+    <link rel="stylesheet" href="category_main.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="scroll.css">
+    <script defer src="project_script.js"></script>
+    <script defer src="drop_down.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav_bar" >
+            <div class="left_side">
+                
+                <div class="main_logo">
+                    <img src="Logos/my_logo_simple.png"></img>
+                </div>
+                
+                <div class="button_wrapper ">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="button_wrapper">
+                    <a href="about.html">About</a>
+                </div> 
+                
+                <div class="button_wrapper active_button_wrapper">
+                    <div class="button_and_arrow">
+                        <div class="link">
+                            <a href="projects.html">Projects</a>
+                        </div>               
+                        <button id="bottom_arrow">
+                            <img src = 'Logos/bottom_arrow.png'>
+                        </button>  
+                    </div>
+                    <div class="drop_down" id = 'drop_down'>
+                        <a href="origami.html">Origami</a>
+                        <a href="drawings.html">Drawings</a>
+                        <a href="paintings.html">Painitings</a>
+                        <a href="sculptures.html">Sculptures</a>
+                        <a href="java.html">Java</a>
+                        <a href="pixel.html">Pixel Art</a>
+                        <a href="digital.html">Digital Art</a>
+                    </div>
+                </div> 
+                
+                
+            </div>
+            
+        </div>
+
+
+        <div class="category_description">
+            <div class="category_box">
+                <h1 id=categories>Digital Art</h1>
+                <p>
+                    Drawing was a skill that I acquired throughout two semesters of my College jurney. I learned about
+                    visualization, sizing, lighting, shadows and plenty of other techniques. At the end of it all, I saw
+                    the world differently, noticing previously unseen visual details in a day to day life and just did
+                    something that I enjoyed.
+                </p>
+            </div>
+            <div class="category_background" style="background-image:url(Logos/digital_logo.png)"></div>
+        </div>
+
+
+        <div id="dots_holder">
+            <img class ='dot_img' src="Logos/Multi_logo.png"></img>
+        </div>
+
+        <div class="item_grid" id= 'item_grid'>
+
+            <div open-button="#popup" class="item_wrapper">
+                <div class="item_background_invis">
+                    <img src="Pictures/Digital Art/Boris Red Army Phone.png">
+                    <img src="Pictures/Digital Art/Boris Army Phone.png">
+                    <img src="Pictures/Digital Art/Boris Orginal.jpg">
+                </div>
+                <div class="item_background">
+                    <img src="Pictures/Digital Art/Boris Red Army Phone.png">
+                </div>
+                <h3 id=item_title>Comrade Boris</h3>
+                <div class="item_description_invis">
+                    <div class="item_description">
+                        <div class="popup_description"> I used shape outlining techniques in Illustrator to make the detailed 2D design. Had to be more creative with this one because of the quirky nature of this piece. </div>
+                        <div class="popup_size">Size: 1/1 scale</div>
+                        <div class="popup_date">Date: 2020</div>
+                    </div>
+                </div>
+                <div class="dots hide_dot">
+                   
+                </div>
+            </div>
+
+            <div class="item_wrapper">
+                <div class="item_background_invis" id="invis">     
+                    <img src="Pictures/Digital Art/Allexiane Illu.png">              
+                    <img src="Pictures/Digital Art/Allexiane Real.JPG">
+                </div>
+                <div class="item_background">
+                    <img src="Pictures/Digital Art/Allexiane Illu.png">
+                </div>
+                <h3 id=item_title>Cute Girl</h3>
+                <div class="item_description_invis">
+                    <div class="item_description">
+                        <div class="popup_description">This is my first Illustrator project. I used shape outlining techniques to make the detailed 2D design. Suprisengly the hardest part was finding the right color palette.  </div>
+                        <div class="popup_size">Size: 16/9 scale</div>
+                        <div class="popup_date">Date: 2020</div>
+                    </div>
+                </div>
+                <div class="dots hide_dot">
+                    
+                </div>
+            </div>
+
+
+            
+
+        </div>
+
+        <button class = "arrow" id=left_arrow>
+            <img src="Logos/arrow_big.png">
+        </button>
+
+        <div class="popup" id='popup'>          
+            <div class="popup_left">
+                <div class="popup_background">
+
+                </div>
+                <button class="flesh" id='left_flesh'>
+                    <img src="Logos/flesh.png">
+                </button>
+                <button class="flesh" id='right_flesh'>
+                    <img src="Logos/flesh.png">
+                </button>
+                <div class="popup_dots .">
+
+                </div>
+            </div>
+            <div class="popup_right">
+                <div class="header">
+                    <div class="title">
+
+                    </div>
+                    <button class="close_button">&times;</button>
+                </div>
+                <div class="popup_text">
+
+                </div>
+            </div>
+        </div>
+
+        <button class = "arrow" id=right_arrow>
+            <img src="Logos/arrow_big.png">
+        </button>
+
+
+        <div id="overlay"></div>
+
+        <div class="footer">
+            <div id="email_container">
+                <div class="email">sedrak005@gmail.com</div>
+            </div>
+            
+            <div id="footer_links">
+                <div class="links">
+                    <div class="logo_grid">
+                        
+                        <a href="https://discord.gg/5E8JcK" class="logo" id = discord >
+                            <img  src="Logos/Discord_logo.png">
+                        </a>
+
+                        <a href="https://facebook.com/sedrak13" class="logo" id = discord >
+                            <img  src="Logos/facebook_logo.png">
+                        </a>
+
+                        <a href="https://vk.com/sedrakable" class="logo" id = discord >
+                            <img  src="Logos/vk_logo.png">
+                        </a>
+
+                        <a href="https://instagram.com/sedrakable" class="logo" id = discord >
+                            <img  src="Logos/instagram_logo.png">
+                        </a> 
+
+                        <a href="https://github.com/Sedrakable" class="logo" id = discord >
+                            <img  src="Logos/git_logo.png">
+                        </a>                                                                
+                        
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</body>
+
+</html>
