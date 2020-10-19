@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body {
     background-color: rgb(40, 44, 52);
     margin: 0px;
@@ -24,30 +24,4 @@ p{
     margin-top: 10px;
     line-height: 1.4em;
 }
-=======
-body {
-    background-color: rgb(40, 44, 52);
-    margin: 0px;
-    font-family: 'Comfortaa', cursive;
-    height:100%;
-    position: relative;
-}
 
-.container {
-    width: 100%;
-    overflow-x: hidden;
-}
-
-h1 {
-    font-weight: lighter;
-    color: rgb(254,183,1);
-    font-size: 30px;
-}
-
-p{
-    font-weight: normal;
-    color:  rgb(245, 245, 245);
-    margin-top: 10px;
-    line-height: 1.4em;
-}
->>>>>>> 053d2b5e3db00e2c8d4ad9db05c262f753bb53f4

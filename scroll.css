@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body::-webkit-scrollbar-track {  
     background:  linear-gradient(0deg, rgb(254,204,0) 0%, rgb(244,108,1) 100%);
     background-size: 100% 100%;
@@ -21,29 +21,3 @@ body::-webkit-scrollbar {
     
 }
 
-
-=======
-body::-webkit-scrollbar-track {  
-    background:  linear-gradient(0deg, rgb(254,204,0) 0%, rgb(244,108,1) 100%);
-    background-size: 100% 100%;
-}
-
-body::-webkit-scrollbar-thumb {  
-    box-shadow: 0px 0px 0px 100000vh rgb(28, 28, 32);
-    border: 2px solid rgb(28, 28, 32);
-}
-
-
-body::-webkit-scrollbar-button:vertical{
-    background-color: transparent; 
-    height: 0px;
-}
-
-
-body::-webkit-scrollbar {
-    width: 24px;
-    
-}
-
-
->>>>>>> 053d2b5e3db00e2c8d4ad9db05c262f753bb53f4
