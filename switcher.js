@@ -1,10 +1,37 @@
+var caregoryWords = ["Web Developer","Game Developer","Digital Artist","Origami Artist","Painter","Calithenict Athlete"];
+var myStringArray = [];
+var switchSpeed = 180;
 
-var myStringArray = ["&lt;|","&lt;&nbsp;","&lt;C|","&lt;C&nbsp;","&lt;Co|","&lt;Co&nbsp;","&lt;Cod|","&lt;Cod&nbsp;","&lt;Code|","&lt;Code&nbsp;","&lt;Code|&gt;","&lt;Code&nbsp;&gt;","&lt;Code&gt;|"];
-myStringArray.push("&lt;|","&lt;&nbsp;","&lt;D|","&lt;D&nbsp;","&lt;Dr|","&lt;Dr&nbsp;","&lt;Dra|","&lt;Dra&nbsp;","&lt;Draw|","&lt;Draw&nbsp;","&lt;Draw|&gt;","&lt;Draw&nbsp;&gt;","&lt;Draw&gt;|");
-myStringArray.push("&lt;|","&lt;&nbsp;","&lt;P|","&lt;P&nbsp;","&lt;Pa|","&lt;Pa&nbsp;","&lt;Pai|","&lt;Pai&nbsp;","&lt;Pain|","&lt;Pain&nbsp;","&lt;Paint|","&lt;Paint&nbsp;","&lt;Paint|&gt;","&lt;Paint&nbsp;&gt;","&lt;Paint&gt;|");
 
-var i =0;
-// const
+function stringCreator(){
+  
+  for (let n = 0; n < caregoryWords.length; n++) {
+    var currentWord = "";
+    myStringArray.push("&nbsp");
+    myStringArray.push("|");
+    myStringArray.push("&lt;" + "&nbsp");
+    myStringArray.push("&lt;" + "|");
+    
+    for (let m = 0; m < caregoryWords[n].length; m++) {
+        
+        currentWord = currentWord + caregoryWords[n].charAt(m);
+
+        myStringArray.push("&lt;" + currentWord + "|" )  
+       
+        myStringArray.push("&lt;" + currentWord + "&nbsp")  
+
+        
+    }
+    myStringArray.push("&lt;" + currentWord + "&gt;" + "&nbsp");
+    myStringArray.push("&lt;" + currentWord + "&gt;"+"|");
+    myStringArray.push("&lt;" + currentWord + "&gt;" + "&nbsp");
+    
+    
+  }
+  console.log(myStringArray)
+}
+
+var i = 0;
 
 function switchee(){
     
@@ -21,6 +48,11 @@ function switchee(){
 window.setInterval(function(){
     switchee()
     
-  }, 200);
+  }, switchSpeed);
+
+window.onload = function() {
+      
+  stringCreator();
+};
 
   

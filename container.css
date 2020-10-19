@@ -1,16 +1,14 @@
 body {
-    background-color: rgb(215, 216, 233);
+    background-color: rgb(40, 44, 52);
     margin: 0px;
     font-family: 'Comfortaa', cursive;
-    height:100%px;
+    height:100%;
     position: relative;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-size: cover;
-    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 h1 {
