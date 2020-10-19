@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .about_main{
     max-width: 1600px;
     margin: 0 auto;
@@ -122,3 +123,129 @@
     font-weight: 300;
     
 }
+=======
+.about_main{
+    max-width: 1600px;
+    margin: 0 auto;
+    background:  rgb(40, 44, 52);
+    padding: 24px;
+    
+}
+
+.parallax {
+    background: url('Pictures/Painting/my_logo.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+
+}
+
+.image_1{
+    background: url('Pictures/Painting/my_logo.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+
+}
+
+.image_2{
+    background: url('Pictures/About/Young.jpg') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+
+}
+
+
+.image_text {
+    position: absolute;
+    top: 500px;
+    left: 320px;
+    text-align: left;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    font-size: 3em;
+    color: rgb(215, 216, 233);
+}
+
+
+
+
+
+
+
+.item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;   
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: auto;
+  
+}
+
+
+.grid_background{
+    z-index: -1;
+    background-color: rgb(216, 4, 4);
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.grid_background::after{
+    content: '';
+    position: absolute;
+    /* top: calc(-1 *10px);
+    left: calc(-1 *10px);
+    height: calc(100% + 10px *2);
+    width: calc(100% + 10px *2); */
+    background: linear-gradient(-30deg,rgb(254,204,0),rgb(254,204,0),rgb(254,204,0),rgb(244,108,1),rgb(244,108,1),rgb(244,108,1));
+    z-index: -1;
+    animation: change 8s ease-in-out infinite;
+    background-size: 600% 600%;
+}
+
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.info_container{
+    width: 100%;
+    height: 500px;
+    background: rgb(21, 23, 27);
+    padding: 24px;
+    padding-bottom: 32px;
+    
+}
+
+
+.title{
+    width: 100%;
+    font-weight: 900;
+    font-size: 4em;
+    color: rgb(244,108,1);
+    display: block;
+    margin-bottom: 8px;
+}
+
+.message{
+    font-size: 24px;
+    color: rgb(215, 216, 233);
+    font-weight: 300;
+    
+}
+>>>>>>> 053d2b5e3db00e2c8d4ad9db05c262f753bb53f4
