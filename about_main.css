@@ -8,28 +8,12 @@
 }
 
 .parallax {
-    background: url('Pictures/Painting/my_logo.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 800px;
+    min-height: 800px;
+    background: transparent;
 
 }
 
-.image_1{
-    background: url('Pictures/Painting/my_logo.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 800px;
 
-}
-
-.image_2{
-    background: url('Pictures/About/Young.jpg') no-repeat center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 800px;
-
-}
 
 
 .image_text {
@@ -62,25 +46,12 @@
 }
 
 
-.grid_background{
-    z-index: -1;
-    background-color: rgb(216, 4, 4);
-    display: block;
-    position: absolute;
+.info_container{
+    display: flex;  
     width: 100%;
-    height: 100%;
-}
-
-.grid_background::after{
-    content: '';
-    position: absolute;
-    /* top: calc(-1 *10px);
-    left: calc(-1 *10px);
-    height: calc(100% + 10px *2);
-    width: calc(100% + 10px *2); */
-    background: linear-gradient(-30deg,rgb(254,204,0),rgb(254,204,0),rgb(254,204,0),rgb(244,108,1),rgb(244,108,1),rgb(244,108,1));
-    z-index: -1;
-    animation: change 8s ease-in-out infinite;
+    height: 500px;
+    background: linear-gradient(90deg,rgb(244,108,1),rgb(244,108,1),rgb(254,204,0),rgb(254,204,0));
+    animation: change 6s ease-in-out infinite;
     background-size: 600% 600%;
 }
 
@@ -98,28 +69,42 @@
     }
 }
 
-.info_container{
-    width: 100%;
-    height: 500px;
+.grid_background{
+    margin-left: 16px;
+    padding: 32px;
+    
     background: rgb(21, 23, 27);
-    padding: 24px;
-    padding-bottom: 32px;
+/*     
+    padding-bottom: 32px; */
     
 }
 
 
 .title{
     width: 100%;
-    font-weight: 900;
+    height: auto;
+    padding-bottom: 16px;
+    margin-right: 24px;
+    font-weight: 200;
     font-size: 4em;
-    color: rgb(244,108,1);
-    display: block;
-    margin-bottom: 8px;
+    font-style: normal;
+    background: linear-gradient(90deg,rgb(244,108,1),rgb(244,108,1),rgb(254,204,0),rgb(254,204,0));
+    background-size: 400% 400%;
+    color: #000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    animation: change 6s ease-in-out infinite;
+    
 }
 
 .message{
+    
+    padding-right: 400px;
+    line-height: 32px;
+    font-weight: 200;
+    font-style: normal;
     font-size: 24px;
     color: rgb(215, 216, 233);
-    font-weight: 300;
+    
     
 }
