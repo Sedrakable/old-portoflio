@@ -189,7 +189,9 @@ function closePopup(popup) {
     leftButton.classList.remove('active')
     rightButton.classList.remove('active')
     
-}   function leftClick(){
+}   
+
+function leftClick(){
         const leftCategory = currentCategory.previousSibling.previousSibling; 
         currentCategory = leftCategory;     
         Replace(leftCategory)

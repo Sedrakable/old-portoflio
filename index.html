@@ -17,8 +17,7 @@
         <link rel="stylesheet" href="scroll.css">
         <script defer src="switcher.js"></script>
         <script defer src="drop_down.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <script src="parallax.min.js"></script>
+        <script defer src="my_parallax_v2.js"></script>
     </head>
     <body>
         <div class="nav_bar" >
@@ -60,13 +59,17 @@
             </div>
             
         </div>
-        <div class="index_container">
+        <div class="container">
             
             <div class="index_main" >
-                <div class="left_grid parallax" data-parallax="scroll" data-z-index="1" data-image-src="Logos/Code Background.png">                   
+                <div class="left_grid">                   
+                    <div id="background">
+
+                    </div>
                     
                 
                     <div class= "left_container" >
+                       
                         <div id= 'title_container' > 
                             
                             <div class="hello_left_box" id = word_container>

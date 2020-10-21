@@ -12,8 +12,9 @@
 
 .project_box{
     width: auto;
-    padding: 0px 200px;
-    min-width: 600px;
+    padding: 0px 64px;
+    max-width: 800px;
+    min-width: 400px;
     margin: auto;
 }
 .project_description{

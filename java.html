@@ -16,52 +16,62 @@
     <link rel="stylesheet" href="scroll.css">
     <script defer src="project_script.js"></script>
     <script defer src="drop_down.js"></script>
+    <script defer src="my_parallax_v2.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="nav_bar" >
-            <div class="left_side">
-                
-                <div class="main_logo">
-                    <img src="Logos/my_logo_simple.png"></img>
-                </div>
-                
-                <div class="button_wrapper ">
-                    <a href="index.html">Home</a>
-                </div>
-
-                <div class="button_wrapper">
-                    <a href="about.html">About</a>
-                </div> 
-                
-                <div class="button_wrapper active_button_wrapper">
-                    <div class="button_and_arrow">
-                        <div class="link">
-                            <a href="projects.html">Projects</a>
-                        </div>               
-                        <button id="bottom_arrow">
-                            <img src = 'Logos/bottom_arrow.png'>
-                        </button>  
-                    </div>
-                    <div class="drop_down" id = 'drop_down'>
-                        <a href="origami.html">Origami</a>
-                        <a href="drawings.html">Drawings</a>
-                        <a href="paintings.html">Painitings</a>
-                        <a href="sculptures.html">Sculptures</a>
-                        <a href="java.html">Java</a>
-                        <a href="pixel.html">Pixel Art</a>
-                        <a href="digital.html">Digital Art</a>
-                    </div>
-                </div> 
-                
-                
+    <div class="nav_bar" >
+        <div class="left_side">
+            
+            <div class="main_logo">
+                <img src="Logos/my_logo_simple.png"></img>
             </div>
             
+            <div class="button_wrapper ">
+                <a href="index.html">Home</a>
+            </div>
+
+            <div class="button_wrapper">
+                <a href="about.html">About</a>
+            </div> 
+            
+            <div class="button_wrapper active_button_wrapper">
+                <div class="button_and_arrow">
+                    <div class="link">
+                        <a href="projects.html">Projects</a>
+                    </div>               
+                    <button id="bottom_arrow">
+                        <img src = 'Logos/bottom_arrow.png'>
+                    </button>  
+                </div>
+                <div class="drop_down" id = 'drop_down'>
+                    <a href="origami.html">Origami</a>
+                    <a href="drawings.html">Drawings</a>
+                    <a href="paintings.html">Painitings</a>
+                    <a href="sculptures.html">Sculptures</a>
+                    <a href="java.html">Java</a>
+                    <a href="pixel.html">Pixel Art</a>
+                    <a href="digital.html">Digital Art</a>
+                </div>
+            </div> 
+            
+            
         </div>
-
-
+        
+    </div>
+    
+    <div class="container">
         <div class="category_description">
+            <div id="background"></div>         
+            <div id="foreground"> 
+                <div id="middle_left"> 
+                    <img src="Logos/About/Middle Left 3x.png"></img>
+                </div>
+    
+                <div id="middle_right"> 
+                    <img src="Logos/About/Middle Right 3x.png"></img>
+                </div>       
+            </div>
             <div class="category_box">
                 <h1 id=categories>Java Projects</h1>
                 <p>
@@ -74,14 +84,17 @@
             <div class="category_background" style="background-image:url(Logos/java_logo.png)"></div>
         </div>
 
-        <div class="item_grid">
+        <div class="item_grid" id= 'item_grid'>
 
             <div open-button="#popup" class="item_wrapper">
+                <div class="item_background_invis">
+                    <img src="Pictures/Drawing/wood.jpg">
+                    <img src="Pictures/Drawing/3_squares.jpg">
+                </div>
                 <div class="item_background">
-                    <img src="Pictures/Drawing/wood.png">
+                    <img src="Pictures/Drawing/wood_low.jpg">
                 </div>
                 <h3 id=item_title>Tree bark</h3>
-
                 <div class="item_description_invis">
                     <div class="item_description">
                         <div class="popup_description">A small precise pencil drawing of a Tree Bark.</div>
@@ -89,55 +102,98 @@
                         <div class="popup_date">Date: 2018</div>
                     </div>
                 </div>
+                <div class="dots hide_dot">
+                
+                </div>
             </div>
 
             <div class="item_wrapper">
+                <div class="item_background_invis" id="invis">
+                    <img src="Pictures/Drawing/pinecone.jpg">
+                    <img src="Pictures/Drawing/3_squares.jpg">
+                </div>
                 <div class="item_background">
-                    <img src="Pictures/Drawing/pinecone.png">
+                    <img src="Pictures/Drawing/pinecone_low.jpg">
                 </div>
                 <h3 id=item_title>Pinecone</h3>
                 <div class="item_description_invis">
                     <div class="item_description">
-                        <div class="popup_description">A small precise pencil drawing of a Tree Bark.</div>
+                        <div class="popup_description">A small precise pencil drawing of a Pinecone part.</div>
                         <div class="popup_size">Size: 6cm x 6cm</div>
                         <div class="popup_date">Date: 2018</div>
                     </div>
                 </div>
+                <div class="dots hide_dot">
+                    
+                </div>
             </div>
 
             <div class="item_wrapper">
+                <div class="item_background_invis">                
+                    <img src="Pictures/Drawing/metal.jpg">  
+                    <img src="Pictures/Drawing/3_squares.jpg">            
+                </div>
                 <div class="item_background">
-                    <img src="Pictures/Drawing/metal.png">
+                    <img src="Pictures/Drawing/metal_low.jpg">
                 </div>
                 <h3 id=item_title>Tin Foil</h3>
                 <div class="item_description_invis">
                     <div class="item_description">
-                        <div class="popup_description">A small precise pencil drawing of a Tree Bark.</div>
+                        <div class="popup_description">A small precise pencil drawing of a Tin Foil piece.</div>
                         <div class="popup_size">Size: 6cm x 6cm</div>
                         <div class="popup_date">Date: 2018</div>
                     </div>
+                </div>
+                <div class="dots hide_dot">
+                    
                 </div>
             </div>
 
             <div class="item_wrapper">
+                <div class="item_background_invis">
+                    <img src="Pictures/Drawing/2_sculls.jpg">
+                    <img src="Pictures/Drawing/2_sculls_real.JPG">
+                </div>
                 <div class="item_background">
-                    <img src="Pictures/Drawing/2_sculls.png">
+                    <img src="Pictures/Drawing/2_sculls_low.jpg">
                 </div>
                 <h3 id=item_title>Two Sculls</h3>
                 <div class="item_description_invis">
                     <div class="item_description">
-                        <div class="popup_description">A small precise pencil drawing of a Tree Bark.</div>
-                        <div class="popup_size">Size: 6cm x 6cm</div>
+                        <div class="popup_description">A large charcoal drawing of Two Sculls using the eraser reduction technique. </div>
+                        <div class="popup_size">Size: 30'' x 40''</div>
                         <div class="popup_date">Date: 2018</div>
                     </div>
                 </div>
+                <div class="dots hide_dot">
+                    
+                </div>
             </div>
 
-        </div>
+        </div>    
+    </div>
 
-        <div class="popup" id='popup'>
+    <div id="dots_holder">
+        <img class ='dot_img' src="Logos/Multi_logo.png"></img>
+    </div>
+
+    <div class="popup_container"id="overlay">
+        <button class = "arrow" id=left_arrow>
+            <img src="Logos/arrow_big.png">
+        </button>
+
+        <div class="popup" id='popup'>          
             <div class="popup_left">
                 <div class="popup_background">
+
+                </div>
+                <button class="flesh" id='left_flesh'>
+                    <img src="Logos/flesh.png">
+                </button>
+                <button class="flesh" id='right_flesh'>
+                    <img src="Logos/flesh.png">
+                </button>
+                <div class="popup_dots .">
 
                 </div>
             </div>
@@ -154,9 +210,9 @@
             </div>
         </div>
 
-        <div id="overlay"></div>
-
-        
+        <button class = "arrow" id=right_arrow>
+            <img src="Logos/arrow_big.png">
+        </button>
     </div>
 </body>
 

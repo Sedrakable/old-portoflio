@@ -1,11 +1,13 @@
 
+
 .category_description{
-    padding: 64px 0;
-    background-color: rgb(40, 44, 52);
+    z-index: 1;
+    position: relative;
+    display: flex;
+    background-color:rgb(49, 49, 57);
     height: auto;
     width: 100%;
     font-size: 1.3em;
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -13,25 +15,51 @@
 }
 
 .category_box{
+    z-index: 2;
     height: auto;
-    max-width: 800px;
+    max-width: 700px;
     min-width: 400px;
-    padding: 0 32px;
+    padding: 64px 32px;
 }
 
 .category_background{
+    z-index: 1;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     width: 1000px;
     height: 700px;
-    margin: 0px 32px;
+    margin: 64px 32px;
 
 }
 
+#background{
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+    background-image: url("Logos/About/Triangle\ Grid.png");
+}
+
+#foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+}
+
+#middle_left{
+    position: absolute;
+    left: 0;
+}
+
+#middle_right{
+    position: absolute;
+    right: 0;
+}
 
 
 .item_grid{
+    z-index: 2;
     background-color: rgb(222,222,252);
     display: flex;
     flex-direction: row;
@@ -39,6 +67,7 @@
     align-items: stretch;
     flex-wrap: wrap;
     height: auto;
+    width: 100%;
     padding: 64px 64px;
     
 }
@@ -115,26 +144,30 @@
     color: transparent;
 }
 
-/* popup */
+.popup_container{
 
-.popup {  
-    position: fixed;
-    top:50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    transition: 0.5s ease-in-out;
     z-index: 3;
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.popup {    
+    transition: 0.5s ease-in-out;
     background-color: rgb(245, 245, 245);
     width: auto;
-    height:600px;
-    
+    height:600px;  
     margin: 0;
     padding: 0;
     display: inline-flex; 
+    transform: scale(0);
 }
 
 .popup.active{
-    transform: translate(-50%, -50%) scale(1);
+    transform: scale(1);
 }
 
 .popup_left{
@@ -240,13 +273,13 @@
     background: none;
     outline: none;
     border: none;
-    position: fixed;
-    display: inline-flex;
-    top:50%;  
+    position: relative;
+    display: none;
     pointer-events: none;
-    transform: translate(0, -50%) scale(0);
     transition: 0.5s ease-in-out;
     z-index: 3;  
+    margin: 40px;
+    transform: scale(0);
 }
 
 .arrow >img:hover{
@@ -257,28 +290,27 @@
 
 .arrow.active{
     pointer-events: all;
-    transform: translate(0, -50%) scale(1);
+    display: inline-flex;
 }
 
 .arrow > img{
+    filter: grayscale(0);
     width: 100px;
 }
 
 #right_arrow{
-    right: 5%;
+    transform: rotate(90deg);
     
 }
 
 #left_arrow{
-    left: 5%;
-    transform: translate(0, -50%) rotate(180deg) scale(0);
+    transform: rotate(-90deg);
 }
 
 #left_arrow.active{
-    transform: translate(0, -50%) rotate(180deg);
-
-
+    transform: rotate(-90deg) scale(1);
 }
+
 
 .flesh{
     cursor: pointer;
@@ -332,7 +364,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.8);
     z-index: 2;
     pointer-events: none;
 }

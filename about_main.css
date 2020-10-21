@@ -5,37 +5,15 @@
     height: 100%;
     width: 100%;
     background-image: url("Logos/About/Triangle\ Grid.png");
-    
+    overflow:hidden;
 }
 
 #foreground{
     position: absolute;
     height: 100%;
     width: 100%;
-    
+    overflow:hidden;
 }
-
-/* .parallax_v2{
-    -webkit-perspective-origin-x: 100%;
-    perspective: 1px;
-    overflow-y: auto;
-}
-
-.parallax_layer{
-    -webkit-transform-origin-x: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.back_layer{  
-    transform: translateZ(0);
-}
-
-.front_layer{
-    transform: translateZ(-1px) scale(2);   
-} */
 
 #left{
     position: absolute;

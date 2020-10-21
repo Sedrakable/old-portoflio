@@ -8,15 +8,6 @@ body {
     /* overflow: hidden; */
 }
 
-.index_container {
-    position: absolute;
-    background-color: rgb(40, 44, 52);
-    height: 100%;
-    width: 100%;
-    top: 0;
-
-    
-}
 
  
 
@@ -29,8 +20,4 @@ h1 {
     font-weight: lighter;
     color: rgb(254,183,1);
     font-size: 40px;
-}
-
-#background{
-    width: 100%;
 }
