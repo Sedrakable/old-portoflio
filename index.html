@@ -15,50 +15,23 @@
         <link rel="stylesheet" href="index_main.css">
         <link rel="stylesheet" href="index_container.css">
         <link rel="stylesheet" href="scroll.css">
+        <script defer src="loader.js"></script>
         <script defer src="switcher.js"></script>
         <script defer src="drop_down.js"></script>
         <script defer src="my_parallax_v2.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script> -->
+        <script> 
+            $(function(){
+              $("#nav_container").load("navbar.html"); 
+            });
+        </script>
     </head>
     <body>
-        <div class="nav_bar" >
-            <div class="left_side">
-                
-                <div class="main_logo">
-                    <img src="Logos/my_logo_simple.png"></img>
-                </div>
-                
-                <div class="button_wrapper active_button_wrapper">
-                    <a href="index.html">Home</a>
-                </div>
+        <div id="nav_container">
 
-                <div class="button_wrapper">
-                    <a href="about.html">About</a>
-                </div> 
-                
-                <div class="button_wrapper">
-                    <div class="button_and_arrow">
-                        <div class="link">
-                            <a href="projects.html">Projects</a>
-                        </div>               
-                        <button id="bottom_arrow">
-                            <img src = 'Logos/bottom_arrow.png'>
-                        </button>  
-                    </div>
-                    <div class="drop_down" id = 'drop_down'>
-                        <a href="origami.html">Origami</a>
-                        <a href="drawings.html">Drawings</a>
-                        <a href="paintings.html">Painitings</a>
-                        <a href="sculptures.html">Sculptures</a>
-                        <a href="java.html">Java</a>
-                        <a href="pixel.html">Pixel Art</a>
-                        <a href="digital.html">Digital Art</a>
-                    </div>
-                </div> 
-                
-                
-            </div>
-            
         </div>
+
         <div class="container">
             
             <div class="index_main" >
@@ -183,11 +156,11 @@
                             <ul class = 'sub_section vertical_list' style="list-style-type:none;">
                                 <li >Tested every possible section of the Game: Ui, Gameplay, Competetive, Maps, Skins, Shops, Social etc...</li>   
                                 <li >Talked and Worked with develorpers Daily and fulfilled their requests</li> 
-                                <li >Helped out the Team leader with some decisions</li> 
+                                <li >Helped out the team leader with some decisions</li> 
                                 <li >Introduced multiple team members to the project</li>  
                                 <li >Created Multiple Docuements for bettter understading of the project</li>  
                                 <li >Used the Jira Website(software) to report bugs</li>    
-                                <li >Verified bugs whritien by the team memebers and gave feedback</li>  
+                                <li >Verified bugs written by the team memebers and gave feedback</li>  
                                 <li >Regressed fixed bugs and tracked team progression on Excel(Google) sheets</li>                                                                                        
                             </ul>
                             
@@ -206,7 +179,7 @@
                             <b class='title'> Skills </b>
 
                             <ul class = 'section' style="list-style-type:none;">
-                                <b> Solftware </b> 
+                                <b> Software </b> 
                                                                 
                             </ul>
 

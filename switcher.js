@@ -1,5 +1,5 @@
 
-var caregoryWords = ["Web Developer","Game Developer","Digital Artist","Origami Artist","Painter","Calithenict Athlete"];
+var caregoryWords = ["Web Developer","Game Developer","Digital Artist","Origami Artist","Painter","Calisthenics Athlete"];
 var myStringArray = [];
 var switchSpeed = 180;
 
