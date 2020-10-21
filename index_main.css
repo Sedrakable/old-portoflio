@@ -14,7 +14,13 @@
     font-size: 1.3em;
 }
 
+.parallax {
+    background: transparent;
+}
+
 .left_container{
+    z-index: 2;
+    position: relative;
     width: fit-content;
     padding: 32px;
     margin: auto;
@@ -180,7 +186,6 @@
 }
 
 #title_container{
-    
     margin: auto;
     margin-top: 100px;
     padding: 16px;

@@ -4,7 +4,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    background-image: url("Logos/Triangle\ Grid.png");
+    background-image: url("Logos/About/Triangle\ Grid.png");
     
 }
 
@@ -51,13 +51,13 @@
 
 #middle_left{
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 0;
 }
 
 #middle_right{
     position: absolute;
-    top: 40%;
+    top: 50%;
     right: 0;
 }
 
@@ -88,16 +88,17 @@
 
 
 .about_main{
-    max-width: 1000px;
+    max-width: 80%;
+    width: 1000px;
     margin: 0 auto;
     background:  rgb(49, 49, 57);
+    overflow: hidden;
 }
 
 .parallax {
     width: 100%;
     min-height: 800px;
     background: transparent;
-
 }
 
 

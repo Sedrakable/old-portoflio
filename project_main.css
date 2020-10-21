@@ -1,15 +1,28 @@
 .project_main{
-    height: 1200px;
+    background-color: rgb(219,219,252);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: stretch;
+    z-index: 0;
+    
+    overflow: hidden;
 }
 
+
+.project_box{
+    width: auto;
+    padding: 0px 200px;
+    min-width: 600px;
+    margin: auto;
+}
 .project_description{
+    width: 100%;
+    
     background-color: rgb(40, 44, 52);
-    height: fit-content;
     font-size: 1.3em;
     padding-top: 40px;
     padding-bottom: 40px;
-    padding-left: 350px;
-    padding-right: 350px;
 }
 
 #categories{
@@ -19,34 +32,49 @@
 }
 
 .category_grid{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    background-position: center;
-    display: grid;
-    height: 900px;
-    grid-template-rows: 360px ;
-    grid-template-columns: 360px 360px 360px 360px;
-    grid-gap: 100px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    align-items: stretch;
+    flex-wrap: wrap;
+    height: auto;
+    
+    margin: 64px 64px;
 }
 
 .category{
-    width: 360px;
-    height: 360px;
+    transform: scale(20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 370px;
     position: relative;
+    margin:32px;
+
+    /* z-index: -1; */
+}
+
+.orange_background{
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(-30deg,rgb(254,204,0),rgb(254,204,0),rgb(254,204,0),rgb(244,108,1),rgb(244,108,1),rgb(244,108,1));
+    animation: change 10s ease-in-out infinite;
+    background-size: 600% 600%;
     /* z-index: -1; */
 }
 
 .logo_background{
-    outline-width: 10px ;
-    background-color: rgb(245, 245, 245);
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    background-color: rgb(245,245,245);
+    width: 350px !important;
+    height: 350px;
+    
 }
 
-.logo_background::after{
+/* .logo_background::after{
     content: '';
     position: absolute;
     top: calc(-1 *10px);
@@ -57,7 +85,7 @@
     z-index: -1;
     animation: change 10s ease-in-out infinite;
     background-size: 600% 600%;
-}
+} */
 
 @keyframes change{
     0%{
@@ -101,7 +129,6 @@
 
 .img_widen {
     transition: 0.5s;
-    transform: translateX(-60px);
     padding-left: 60px;
     padding-right: 60px;
 }
@@ -112,24 +139,36 @@
     padding-right: 0px;
 }
 
+.img_transparent{
+    transition: 0.1s;
+    background-color: transparent;
+}
+
+.img_full{
+    transition: 0.1s;
+    background-color: rgb(245,245,245);
+}
+
 #logo_title {
+    bottom: -44px;
+    position: absolute;
     text-align: left;
     font-size: 2em;
     margin-top: 10px;
     color: rgb(40, 44, 52);
     margin-top: 20px;
-    padding-left: 40px;
+    
 }
 
 .category_grid a{
     text-decoration: none;
 }
 
-.text_right{
+/* .text_right{
     transition: 0.5s;
     transform: translateX(60px);
 }
 
 .text_left{
     transition: 0.5s;
-}
+} */

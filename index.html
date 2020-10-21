@@ -17,6 +17,8 @@
         <link rel="stylesheet" href="scroll.css">
         <script defer src="switcher.js"></script>
         <script defer src="drop_down.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="parallax.min.js"></script>
     </head>
     <body>
         <div class="nav_bar" >
@@ -60,95 +62,74 @@
         </div>
         <div class="index_container">
             
-            <div class="index_main">
-                <!-- <div id = "white_background"></div> -->
-                    <div class="left_grid" style="background-image: url('Logos/Code\ Background.png');">                   
-                        
+            <div class="index_main" >
+                <div class="left_grid parallax" data-parallax="scroll" data-z-index="1" data-image-src="Logos/Code Background.png">                   
                     
-                        <div class= "left_container">
-                            <div id= 'title_container'>
-                                
-                                <div class="hello_left_box" id = word_container>
-                                    <span class= "orange_text">Hello World, welcome to </span>
-                                    <span class= "orange_text">My </span> 
-                                    <span class= "orange_text"> Portfolio. <br />  I'm a </span> 
-                                    <span id ="word">|</span>
-                                    <span class= "orange_text" >.</span>
+                
+                    <div class= "left_container" >
+                        <div id= 'title_container' > 
+                            
+                            <div class="hello_left_box" id = word_container>
+                                <span class= "orange_text">Hello World, welcome to </span>
+                                <span class= "orange_text">My </span> 
+                                <span class= "orange_text"> Portfolio. <br />  I'm a </span> 
+                                <span id ="word">|</span>
+                                <span class= "orange_text" >.</span>
+                            </div>
+
+                            <div class="links">
+                                <div class="logo_grid">
+                                    
+                                    <a href="https://discord.gg/5E8JcK" class="logo" id = discord >
+                                        <img  src="Logos/Discord_logo.png">
+                                    </a>
+
+                                    <a href="https://facebook.com/sedrak13" class="logo" id = discord >
+                                        <img  src="Logos/facebook_logo.png">
+                                    </a>
+
+                                    <a href="https://vk.com/sedrakable" class="logo" id = discord >
+                                        <img  src="Logos/vk_logo.png">
+                                    </a>
+
+                                    <a href="https://www.instagram.com/seto.arts" class="logo" id = discord >
+                                        <img  src="Logos/instagram_logo.png">
+                                    </a> 
+
+                                    <a href="https://github.com/Sedrakable" class="logo" id = discord >
+                                        <img  src="Logos/git_logo.png">
+                                    </a>   
+                                    
+                                    <a href="mailto:sedrak005@gmail.com" class="logo" id = email_me >
+                                        <img  src="Logos/gmail_logo.png">
+                                    </a> 
+                                    
                                 </div>
-                                
-                                
-                                <!-- <div id ='main_logo'>
-                                    <div id= 'orange'>
-                                        <div  class = 'big' id = 'big_glow' ></div>
-                                        <img  id = 'big_back' class = 'big' src="Logos/Big Logo Background.png">                         
-                                        <img  class = 'big' id = 'logo' src="Logos/Big_logo.png">   
-                                    </div>                       
-                                            
-                                </div> -->
-    
-                                <div class="links">
-                                    <div class="logo_grid">
-                                        
-                                        <a href="https://discord.gg/5E8JcK" class="logo" id = discord >
-                                            <img  src="Logos/Discord_logo.png">
-                                        </a>
-    
-                                        <a href="https://facebook.com/sedrak13" class="logo" id = discord >
-                                            <img  src="Logos/facebook_logo.png">
-                                        </a>
-    
-                                        <a href="https://vk.com/sedrakable" class="logo" id = discord >
-                                            <img  src="Logos/vk_logo.png">
-                                        </a>
-    
-                                        <a href="https://www.instagram.com/seto.arts" class="logo" id = discord >
-                                            <img  src="Logos/instagram_logo.png">
-                                        </a> 
-    
-                                        <a href="https://github.com/Sedrakable" class="logo" id = discord >
-                                            <img  src="Logos/git_logo.png">
-                                        </a>   
-                                        
-                                        <a href="mailto:sedrak005@gmail.com" class="logo" id = email_me >
-                                            <img  src="Logos/gmail_logo.png">
-                                        </a> 
-                                        
-                                    </div>
-    
-                                    <!-- <div class="email">sedrak005@gmail.com</div>                          -->
-                                </div>                                 
-                            </div>
-    
-                            <div id = "Quote">
-                                <h>
-                                    “Whatever it is that you're passionate about, whatever it is that you absolutely love, 
-                                    and whatever it is that you would get up out of bed every day and do for free, you should try to figure out a way to make money at it and give it a shot.”
-                                </h>
-                                <b>
-                                    - Dana White -
-                                </b>
-                                
-                            </div>
-    
+
+                                <!-- <div class="email">sedrak005@gmail.com</div>                          -->
+                            </div>                                 
                         </div>
-                        
+
+                        <div id = "Quote">
+                            <h>
+                                “Whatever it is that you're passionate about, whatever it is that you absolutely love, 
+                                and whatever it is that you would get up out of bed every day and do for free, you should try to figure out a way to make money at it and give it a shot.”
+                            </h>
+                            <b>
+                                - Dana White -
+                            </b>
+                            
+                        </div>
+
                     </div>
-                   
+                    
+                </div>
                 
                 <div id = 'me'>
                     <div id="me_container">
                         <img  src="Logos/me.png"> 
                     </div>                
-                </div>    
-
-
-                
-                
-                
-                <!-- <img  id = 'big_white' src="Logos/white_background.png"> -->
-                
-                
-                
+                </div>           
                 
             </div>
             <div class="bottom_grid">
