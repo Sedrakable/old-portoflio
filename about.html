@@ -21,45 +21,15 @@
         
     </head>
     <body>
-        <div class="nav_bar" >
-            <div class="left_side">
-                
-                <div class="main_logo">
-                    <img src="Logos/my_logo_simple.png"></img>
-                </div>
-                
-                <div class="button_wrapper">
-                    <a href="index.html">Home</a>
-                </div>
+        <script> 
+            $(function(){
+              $("#nav_container").load("navbar.html"); 
+            });
+        </script>
+        <div id="nav_container">
 
-                <div class="button_wrapper active_button_wrapper">
-                    <a href="about.html">About</a>
-                </div> 
-                
-                <div class="button_wrapper">
-                    <div class="button_and_arrow">
-                        <div class="link">
-                            <a href="projects.html">Projects</a>
-                        </div>               
-                        <button id="bottom_arrow">
-                            <img src = 'Logos/bottom_arrow.png'>
-                        </button>  
-                    </div>
-                    <div class="drop_down" id = 'drop_down'>
-                        <a href="origami.html">Origami</a>
-                        <a href="drawings.html">Drawings</a>
-                        <a href="paintings.html">Painitings</a>
-                        <a href="sculptures.html">Sculptures</a>
-                        <a href="java.html">Java</a>
-                        <a href="pixel.html">Pixel Art</a>
-                        <a href="digital.html">Digital Art</a>
-                    </div>
-                </div> 
-                
-                
-            </div>
-            
         </div>
+        
         <div class="container">
             
             <div id="background"></div>
