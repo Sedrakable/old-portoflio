@@ -15,55 +15,27 @@
         <link rel="stylesheet" href="container.css">
         <link rel="stylesheet" href="nav_bar.css">
         <link rel="stylesheet" href="project_main.css">  
-        <link rel="stylesheet" href="footer.css">
         <link rel="stylesheet" href="scroll.css">
         <script defer src="category_script.js"></script>
-        <script defer src="drop_down.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
     </head>
     <body>
+        <script> 
+            $(function(){
+              $("#nav_container").load("navbar.html"); 
+            });
+        </script>
+        <div id="nav_container">
+
+        </div>
+
         <div class="container category_container">
-            <div class="nav_bar" >
-                <div class="left_side">
-                    
-                    <div class="main_logo">
-                        <img src="Logos/my_logo_simple.png"></img>
-                    </div>
-                    
-                    <div class="button_wrapper ">
-                        <a href="index.html">Home</a>
-                    </div>
-    
-                    <div class="button_wrapper">
-                        <a href="about.html">About</a>
-                    </div> 
-                    
-                    <div class="button_wrapper active_button_wrapper">
-                        <div class="button_and_arrow">
-                            <div class="link">
-                                <a href="projects.html">Projects</a>
-                            </div>               
-                            <button id="bottom_arrow">
-                                <img src = 'Logos/bottom_arrow.png'>
-                            </button>  
-                        </div>
-                        <div class="drop_down" id = 'drop_down'>
-                            <a href="origami.html">Origami</a>
-                            <a href="drawings.html">Drawings</a>
-                            <a href="paintings.html">Painitings</a>
-                            <a href="sculptures.html">Sculptures</a>
-                            <a href="java.html">Java</a>
-                            <a href="pixel.html">Pixel Art</a>
-                            <a href="digital.html">Digital Art</a>
-                        </div>
-                    </div> 
-                    
-                    
-                </div>
-                
-            </div>
+            
 
             <div class="project_main">
                 <div class="project_description">    
+                    
                         <div class="project_box">
                             <h1 id = categories>Categories</h1>
                             <p>Every project that I work on represents a different part of me. All of them are a learning process, 

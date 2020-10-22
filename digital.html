@@ -11,12 +11,12 @@
     <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="container.css">
-    <link rel="stylesheet" href="nav_bar.css">
     <link rel="stylesheet" href="category_main.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="scroll.css">
-    <script defer src="project_script.js"></script>
-    <script defer src="drop_down.js"></script>
+    <script defer src="my_parallax_v2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
 </head>
 
 <body>
@@ -29,11 +29,19 @@
     <div id="nav_container">
 
     </div>
+    
     <div class="container">
-       
-
-
         <div class="category_description">
+            <div id="background"></div>         
+            <div id="foreground"> 
+                <div id="middle_left"> 
+                    <img src="Logos/About/Middle Left 3x.png"></img>
+                </div>
+    
+                <div id="middle_right"> 
+                    <img src="Logos/About/Middle Right 3x.png"></img>
+                </div>       
+            </div>
             <div class="category_box">
                 <h1 id=categories>Digital Art</h1>
                 <p>
@@ -44,11 +52,6 @@
                 </p>
             </div>
             <div class="category_background" style="background-image:url(Logos/digital_logo.png)"></div>
-        </div>
-
-
-        <div id="dots_holder">
-            <img class ='dot_img' src="Logos/Multi_logo.png"></img>
         </div>
 
         <div class="item_grid" id= 'item_grid'>
@@ -101,44 +104,14 @@
 
         </div>
 
-        <button class = "arrow" id=left_arrow>
-            <img src="Logos/arrow_big.png">
-        </button>
+        <script> 
+            $(function(){
+              $("#big_popup_container").load("popup.html"); 
+            });
+        </script>
+        <div id="big_popup_container">
 
-        <div class="popup" id='popup'>          
-            <div class="popup_left">
-                <div class="popup_background">
-
-                </div>
-                <button class="flesh" id='left_flesh'>
-                    <img src="Logos/flesh.png">
-                </button>
-                <button class="flesh" id='right_flesh'>
-                    <img src="Logos/flesh.png">
-                </button>
-                <div class="popup_dots .">
-
-                </div>
-            </div>
-            <div class="popup_right">
-                <div class="header">
-                    <div class="title">
-
-                    </div>
-                    <button class="close_button">&times;</button>
-                </div>
-                <div class="popup_text">
-
-                </div>
-            </div>
         </div>
-
-        <button class = "arrow" id=right_arrow>
-            <img src="Logos/arrow_big.png">
-        </button>
-
-
-        <div id="overlay"></div>
 
        
         </div>    

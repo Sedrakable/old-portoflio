@@ -1,4 +1,26 @@
+#background{
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+    background-image: url("Logos/About/Triangle\ Grid.png") ;
+}
 
+#foreground{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    
+}
+
+#middle_left{
+    position: absolute;
+    left: 0;
+}
+
+#middle_right{
+    position: absolute;
+    right: 0;
+}
 
 .category_description{
     z-index: 1;
@@ -33,29 +55,7 @@
 
 }
 
-#background{
-    position: absolute;
-    width: 100%;
-    height: 100%;   
-    background-image: url("Logos/About/Triangle\ Grid.png");
-}
 
-#foreground{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    
-}
-
-#middle_left{
-    position: absolute;
-    left: 0;
-}
-
-#middle_right{
-    position: absolute;
-    right: 0;
-}
 
 
 .item_grid{
@@ -270,16 +270,18 @@
 
 .arrow{
     cursor: pointer;
-    background: none;
+    background: transparent;
     outline: none;
     border: none;
+    display: inline-flex;
     position: relative;
-    display: none;
+    visibility: hidden;
     pointer-events: none;
-    transition: 0.5s ease-in-out;
+    transition: 0s ease-in-out;
     z-index: 3;  
     margin: 40px;
-    transform: scale(0);
+    width: 100px;
+    /* transform: scale(0); */
 }
 
 .arrow >img:hover{
@@ -290,7 +292,7 @@
 
 .arrow.active{
     pointer-events: all;
-    display: inline-flex;
+    visibility: visible;
 }
 
 .arrow > img{

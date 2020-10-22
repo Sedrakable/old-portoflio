@@ -11,97 +11,74 @@
         <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="container.css">
-        <link rel="stylesheet" href="nav_bar.css">
         <link rel="stylesheet" href="category_main.css">
         <link rel="stylesheet" href="footer.css">
         <link rel="stylesheet" href="scroll.css">
-        <script defer src="project_script.js"></script>
-        <script defer src="drop_down.js"></script>
+
+        <script defer src="my_parallax_v2.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
     </head>
     <body>
-        <div class="container">
-            <div class="nav_bar" >
-                <div class="left_side">
-                    
-                    <div class="main_logo">
-                        <img src="Logos/my_logo_simple.png"></img>
-                    </div>
-                    
-                    <div class="button_wrapper ">
-                        <a href="index.html">Home</a>
-                    </div>
-    
-                    <div class="button_wrapper">
-                        <a href="about.html">About</a>
-                    </div> 
-                    
-                    <div class="button_wrapper active_button_wrapper">
-                        <div class="button_and_arrow">
-                            <div class="link">
-                                <a href="projects.html">Projects</a>
-                            </div>               
-                            <button id="bottom_arrow">
-                                <img src = 'Logos/bottom_arrow.png'>
-                            </button>  
-                        </div>
-                        <div class="drop_down" id = 'drop_down'>
-                            <a href="origami.html">Origami</a>
-                            <a href="drawings.html">Drawings</a>
-                            <a href="paintings.html">Painitings</a>
-                            <a href="sculptures.html">Sculptures</a>
-                            <a href="java.html">Java</a>
-                            <a href="pixel.html">Pixel Art</a>
-                            <a href="digital.html">Digital Art</a>
-                        </div>
-                    </div> 
-                    
-                    
-                </div>
-                
-            </div>
+        <script> 
+            $(function(){
+              $("#nav_container").load("navbar.html"); 
+            });
+        </script>
+        <div id="nav_container">
 
-            
-                <div class="category_description" >
-                    <div class="category_box">
-                        <h1 id = categories>Scupting Projects</h1>
-                        <p>
-                            Sculpting is more or less a new art form for me. There is for sure more to come in this section.
-                        </p>
+        </div>
+        
+        <div class="container">                 
+            <div class="category_description" >
+                <div id="background"></div>         
+                <div id="foreground"> 
+                    <div id="middle_left"> 
+                        <img src="Logos/About/Middle Left 3x.png"></img>
                     </div>
-                    <div class = "category_background" style="background-image:url(Logos/sculp_logo.png)"></div>
-                </div>                   
-            
-                <div id="dots_holder">
-                    <img class ='dot_img' src="Logos/Multi_logo.png"></img>
+
+                    <div id="middle_right"> 
+                        <img src="Logos/About/Middle Right 3x.png"></img>
+                    </div>       
                 </div>
+                <div class="category_box">
+                    <h1 id = categories>Scupting Projects</h1>
+                    <p>
+                        Sculpting is more or less a new art form for me. There is for sure more to come in this section.
+                    </p>
+                </div>
+                <div class = "category_background" style="background-image:url(Logos/sculp_logo.png)"></div>
+            </div>                   
+            
+                
         
-                <div class="item_grid" id= 'item_grid'>
-        
-                    <div open-button="#popup" class="item_wrapper">
-                        <div class="item_background_invis">
-                            <img src="Pictures/Sculpting/Red_hood_mask.jpg">
-                            <img src="Pictures/Sculpting/Red_hood_Mask_prototype.jpg">
-                            <img src="Pictures/Sculpting/RedHood-2016.jpg">
-                        </div>
-                        <div class="item_background">
-                            <img src="Pictures/Sculpting/Red_hood_mask.jpg">
-                        </div>
-                        <h3 id=item_title>Red Hood Helmet</h3>
-                        <div class="item_description_invis">
-                            <div class="item_description">
-                                <div class="popup_description">This is a recreation of a helmet of a fictional character called the Red Hood, for Holloween.
-                                     Using kids foam puzzles and a glue-gun, I cut-out individual pieces and put all together to create the shape.
-                                     Then I cleaned up the edges and spray painted the whole mask red. 
-                                     I had to recreate the mast 3 times because the first time the mask came out too small for my head, 
-                                     the second time it came out too big.</div>
-                                <div class="popup_size">Size: Normal head-shape</div>
-                                <div class="popup_date">Date: 2015</div>
-                            </div>
-                        </div>
-                        <div class="dots hide_dot">
-                           
+            <div class="item_grid" id= 'item_grid'>
+    
+                <div open-button="#popup" class="item_wrapper">
+                    <div class="item_background_invis">
+                        <img src="Pictures/Sculpting/Red_hood_mask.jpg">
+                        <img src="Pictures/Sculpting/Red_hood_Mask_prototype.jpg">
+                        <img src="Pictures/Sculpting/RedHood-2016.jpg">
+                    </div>
+                    <div class="item_background">
+                        <img src="Pictures/Sculpting/Red_hood_mask.jpg">
+                    </div>
+                    <h3 id=item_title>Red Hood Helmet</h3>
+                    <div class="item_description_invis">
+                        <div class="item_description">
+                            <div class="popup_description">This is a recreation of a helmet of a fictional character called the Red Hood, for Holloween.
+                                    Using kids foam puzzles and a glue-gun, I cut-out individual pieces and put all together to create the shape.
+                                    Then I cleaned up the edges and spray painted the whole mask red. 
+                                    I had to recreate the mast 3 times because the first time the mask came out too small for my head, 
+                                    the second time it came out too big.</div>
+                            <div class="popup_size">Size: Normal head-shape</div>
+                            <div class="popup_date">Date: 2015</div>
                         </div>
                     </div>
+                    <div class="dots hide_dot">
+                        
+                    </div>
+                </div>
         
                     <div class="item_wrapper">
                         <div class="item_background_invis" id="invis">
@@ -152,48 +129,18 @@
         
                     
         
-                </div>
-        
-                <button class = "arrow" id=left_arrow>
-                    <img src="Logos/arrow_big.png">
-                </button>
-        
-                <div class="popup" id='popup'>          
-                    <div class="popup_left">
-                        <div class="popup_background">
-        
-                        </div>
-                        <button class="flesh" id='left_flesh'>
-                            <img src="Logos/flesh.png">
-                        </button>
-                        <button class="flesh" id='right_flesh'>
-                            <img src="Logos/flesh.png">
-                        </button>
-                        <div class="popup_dots .">
-        
-                        </div>
-                    </div>
-                    <div class="popup_right">
-                        <div class="header">
-                            <div class="title">
-        
-                            </div>
-                            <button class="close_button">&times;</button>
-                        </div>
-                        <div class="popup_text">
-        
-                        </div>
-                    </div>
-                </div>
-        
-                <button class = "arrow" id=right_arrow>
-                    <img src="Logos/arrow_big.png">
-                </button>
-        
-        
-                <div id="overlay"></div>
+            </div>
         
                 
+        </div>
+
+        <script> 
+            $(function(){
+              $("#big_popup_container").load("popup.html"); 
+            });
+        </script>
+        <div id="big_popup_container">
+
         </div>
     </body>
 </html>

@@ -12,7 +12,6 @@ const height = background.offsetHeight;
   
     function scrollSpeed(){
         var x = offsetMultiplier * offsetY;
-        console.log("height: " + height + "x: " +x);
         var currentHeight = height  - x;
         background.style.transform = "translateY(" + x + "px)";     
         background.style.height = currentHeight +"px";
