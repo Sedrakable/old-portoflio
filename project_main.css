@@ -114,7 +114,7 @@
     right: 0;
     margin: auto;
 }
-#origami >img , #painting >img{
+#origami >img , #painting >img, #unity >img{
     max-height: 100%;
     max-width: 100%;
     width: 300px;
