@@ -203,6 +203,13 @@
     background-color: rgb(20, 23, 27);
 
 }
+
+.giphy-embed > source{
+    height: 100% !important;
+    width: 100%;
+}
+
+
 .popup_right{
     background-color: rgb(245, 245, 245);
     min-width: 400px;
@@ -219,6 +226,11 @@
     padding-right: 30px;
     
     
+}
+
+#gif-mp4{
+    width: 100% !important;
+    height: 100% !important;  
 }
 
 .popup_description{
