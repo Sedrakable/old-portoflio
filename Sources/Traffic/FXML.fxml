@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" maxHeight="800.0" maxWidth="800.0" minHeight="800.0" minWidth="800.0" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="matrix.FXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="pane1" maxHeight="800.0" maxWidth="800.0" minHeight="800.0" minWidth="800.0" prefHeight="800.0" prefWidth="800.0">
+         <children>
+            <Label fx:id="LabelRows" alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="40.0" prefHeight="50.0" prefWidth="100.0" text="Rows" textAlignment="CENTER" textFill="#ffda00" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font name="Agency FB Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="LabelColumbs" alignment="CENTER" contentDisplay="CENTER" layoutX="508.0" layoutY="40.0" prefHeight="50.0" prefWidth="100.0" text="Columbs" textFill="#ffda00" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="40.0">
+               <font>
+                  <Font name="Agency FB Bold" size="32.0" />
+               </font>
+            </Label>
+            <Label fx:id="ErrorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="314.0" layoutY="238.0" prefHeight="20.0" prefWidth="200.0" textAlignment="CENTER" textFill="#ffda00" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="170.0">
+               <font>
+                  <Font name="Agency FB Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="StartButton" mnemonicParsing="false" onAction="#Start" prefHeight="50.0" prefWidth="100.0" text="Start" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="120.0">
+               <font>
+                  <Font name="Agency FB Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="reduce" layoutX="323.0" layoutY="638.0" mnemonicParsing="false" onAction="#matrixReducer" prefHeight="50.0" prefWidth="150.0" text="Reduce" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="325.0" AnchorPane.rightAnchor="325.0">
+               <font>
+                  <Font name="Agency FB Bold" size="22.0" />
+               </font>
+            </Button>
+            <ChoiceBox fx:id="RowBox" layoutX="130.0" layoutY="80.0" prefHeight="50.0" prefWidth="100.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="80.0" />
+            <ChoiceBox fx:id="ColumbBox" layoutX="370.0" layoutY="80.0" prefHeight="50.0" prefWidth="100.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="80.0" />
+            <Button fx:id="exitButton" layoutX="712.0" layoutY="40.0" mnemonicParsing="false" onAction="#Exit" prefHeight="50.0" prefWidth="50.0" text="Button" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+            <Button fx:id="minButton" layoutX="652.0" layoutY="40.0" mnemonicParsing="false" onAction="#Minimise" prefHeight="50.0" prefWidth="50.0" text="Button" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="20.0" />
+            <Label fx:id="Title" alignment="CENTER" contentDisplay="CENTER" layoutX="300.0" layoutY="28.0" prefHeight="20.0" prefWidth="300.0" text="THE REDUCER" textAlignment="CENTER" textFill="#ffda00" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="10.0">
+               <font>
+                  <Font name="Agency FB Bold" size="62.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

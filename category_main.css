@@ -176,13 +176,14 @@
     width: fit-content;
     display: flex;
     position:relative;
+    align-items: center;
 
 }
 
 .popup_background{
     /* float: left; */
     height: 100%;
-    background-color: rgb(215, 216, 233);
+    background-color: rgb(32, 32, 38);
 
 }
 
@@ -195,13 +196,13 @@
     
 }
 
+
+
 .giphy-embed{
     object-fit: contain;
     height: 100% !important;
     width: 900px;
     max-width: 900px;
-    background-color: rgb(20, 23, 27);
-
 }
 
 .giphy-embed > source{
@@ -340,8 +341,6 @@
     outline: none;
     border: none;
     position: absolute;
-    padding-top: 270px;
-    padding-bottom: 270px;
     /* left: 50%;
     top: 50%;
     transform: translate(-50%,-50%); */
