@@ -3,10 +3,14 @@ const homeButton = document.getElementById("home_button");
 const aboutButton = document.getElementById("about_button");
 const projectButton = document.getElementById("project_button");
 const url = window.location.pathname;
-window.onload = function () {
-  console.log(url);
-  setActive();
-};
+
+if (window.attachEvent) {
+  window.attachEvent("onload", setActive());
+} else if (window.addEventListener) {
+  window.addEventListener("load", setActive(), false);
+} else {
+  document.addEventListener("load", setActive(), false);
+}
 
 function setActive() {
   switch (url) {
@@ -17,9 +21,6 @@ function setActive() {
       aboutButton.classList.add("active_button_wrapper");
       break;
     case "/projects.html":
-      projectButton.classList.add("active_button_wrapper");
-      break;
-    case "/origami.html":
       projectButton.classList.add("active_button_wrapper");
       break;
     default:
