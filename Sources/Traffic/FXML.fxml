@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.image.*?>
-<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
@@ -9,45 +9,127 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" fx:id="pane" maxHeight="800.0" maxWidth="800.0" minHeight="800.0" minWidth="800.0" prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="matrix.FXMLDocumentController">
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" onMouseMoved="#getPosition" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="network.FXMLDocumentController">
    <children>
-      <AnchorPane fx:id="pane1" maxHeight="800.0" maxWidth="800.0" minHeight="800.0" minWidth="800.0" prefHeight="800.0" prefWidth="800.0">
+      <AnchorPane fx:id="menuPane" prefHeight="480.0" prefWidth="1920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
          <children>
-            <Label fx:id="LabelRows" alignment="CENTER" contentDisplay="CENTER" layoutX="192.0" layoutY="40.0" prefHeight="50.0" prefWidth="100.0" text="Rows" textAlignment="CENTER" textFill="#ffda00" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="40.0">
+            <CheckBox fx:id="blockCheck" mnemonicParsing="false" onAction="#blockView" AnchorPane.bottomAnchor="100.0" AnchorPane.rightAnchor="300.0">
                <font>
-                  <Font name="Agency FB Bold" size="32.0" />
+                  <Font name="Century Gothic Bold" size="21.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="velocityLabel" layoutX="910.0" layoutY="375.0" prefHeight="50.0" prefWidth="320.0" text="Car Velocity:" textFill="#b57b00" AnchorPane.bottomAnchor="110.0" AnchorPane.rightAnchor="800.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="30.0" />
                </font>
             </Label>
-            <Label fx:id="LabelColumbs" alignment="CENTER" contentDisplay="CENTER" layoutX="508.0" layoutY="40.0" prefHeight="50.0" prefWidth="100.0" text="Columbs" textFill="#ffda00" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="40.0">
+            <Label fx:id="speedLabel" layoutX="700.0" prefHeight="50.0" prefWidth="320.0" text="Network Speed:" textFill="#b57b00" AnchorPane.bottomAnchor="60.0" AnchorPane.rightAnchor="800.0">
                <font>
-                  <Font name="Agency FB Bold" size="32.0" />
+                  <Font name="Century Gothic Bold" size="30.0" />
                </font>
             </Label>
-            <Label fx:id="ErrorLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="314.0" layoutY="238.0" prefHeight="20.0" prefWidth="200.0" textAlignment="CENTER" textFill="#ffda00" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="170.0">
+            <Label fx:id="rateLabel" layoutX="810.0" layoutY="390.0" prefHeight="50.0" prefWidth="320.0" text="Rate:" textFill="#b57b00" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="800.0">
                <font>
-                  <Font name="Agency FB Bold" size="20.0" />
+                  <Font name="Century Gothic Bold" size="30.0" />
                </font>
             </Label>
-            <Button fx:id="StartButton" mnemonicParsing="false" onAction="#Start" prefHeight="50.0" prefWidth="100.0" text="Start" AnchorPane.leftAnchor="350.0" AnchorPane.rightAnchor="350.0" AnchorPane.topAnchor="120.0">
+            <Slider fx:id="velocitySlider" layoutX="1030.0" layoutY="340.0" max="1000.0" min="100.0" onMouseDragged="#onSlide" onMouseEntered="#onSlide" onMouseExited="#onSlide" onMouseMoved="#onSlide" prefHeight="25.0" prefWidth="300.0" showTickLabels="true" showTickMarks="true" value="400.0" AnchorPane.bottomAnchor="90.0" AnchorPane.rightAnchor="500.0" />
+            <Slider fx:id="speedSlider" blockIncrement="0.5" max="5.0" min="0.5" minorTickCount="5" onMouseDragged="#onSlide" onMouseEntered="#onSlide" onMouseExited="#onSlide" onMouseMoved="#onSlide" prefHeight="25.0" prefWidth="300.0" showTickLabels="true" showTickMarks="true" value="1.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="1120.0" AnchorPane.rightAnchor="500.0" />
+            <Slider fx:id="rateSlider" blockIncrement="0.5" layoutX="1130.0" layoutY="435.0" max="20.0" min="1.0" minorTickCount="5" onMouseDragged="#onSlide" onMouseEntered="#onSlide" onMouseExited="#onSlide" onMouseMoved="#onSlide" prefHeight="25.0" prefWidth="300.0" showTickLabels="true" showTickMarks="true" value="2.5" AnchorPane.bottomAnchor="-10.0" AnchorPane.leftAnchor="1120.0" AnchorPane.rightAnchor="500.0" />
+            <Button fx:id="lvl1Button" mnemonicParsing="false" onAction="#openLvl1" prefHeight="50.0" prefWidth="50.0" textFill="WHITE" AnchorPane.rightAnchor="520.0" AnchorPane.topAnchor="206.0">
                <font>
-                  <Font name="Agency FB Bold" size="16.0" />
+                  <Font name="Agency FB Bold" size="25.0" />
                </font>
             </Button>
-            <Button fx:id="reduce" layoutX="323.0" layoutY="638.0" mnemonicParsing="false" onAction="#matrixReducer" prefHeight="50.0" prefWidth="150.0" text="Reduce" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="325.0" AnchorPane.rightAnchor="325.0">
+            <Button fx:id="lvl2Button" layoutX="1230.0" layoutY="60.0" mnemonicParsing="false" onAction="#openLvl2" prefHeight="50.0" prefWidth="50.0" textFill="WHITE" AnchorPane.rightAnchor="410.0" AnchorPane.topAnchor="206.0">
                <font>
-                  <Font name="Agency FB Bold" size="22.0" />
+                  <Font name="Agency FB Bold" size="25.0" />
                </font>
             </Button>
-            <ChoiceBox fx:id="RowBox" layoutX="130.0" layoutY="80.0" prefHeight="50.0" prefWidth="100.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="80.0" />
-            <ChoiceBox fx:id="ColumbBox" layoutX="370.0" layoutY="80.0" prefHeight="50.0" prefWidth="100.0" AnchorPane.rightAnchor="150.0" AnchorPane.topAnchor="80.0" />
-            <Button fx:id="exitButton" layoutX="712.0" layoutY="40.0" mnemonicParsing="false" onAction="#Exit" prefHeight="50.0" prefWidth="50.0" text="Button" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
-            <Button fx:id="minButton" layoutX="652.0" layoutY="40.0" mnemonicParsing="false" onAction="#Minimise" prefHeight="50.0" prefWidth="50.0" text="Button" AnchorPane.rightAnchor="80.0" AnchorPane.topAnchor="20.0" />
-            <Label fx:id="Title" alignment="CENTER" contentDisplay="CENTER" layoutX="300.0" layoutY="28.0" prefHeight="20.0" prefWidth="300.0" text="THE REDUCER" textAlignment="CENTER" textFill="#ffda00" AnchorPane.leftAnchor="250.0" AnchorPane.rightAnchor="250.0" AnchorPane.topAnchor="10.0">
+            <Button fx:id="lvl3Button" layoutX="1380.0" layoutY="60.0" mnemonicParsing="false" onAction="#openLvl3" prefHeight="50.0" prefWidth="50.0" textFill="WHITE" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="206.0">
                <font>
-                  <Font name="Agency FB Bold" size="62.0" />
+                  <Font name="Agency FB Bold" size="25.0" />
+               </font>
+            </Button>
+            <Label fx:id="checkLabel" alignment="CENTER" layoutX="1650.0" layoutY="325.0" prefHeight="50.0" prefWidth="250.0" text="View Stop Blocks" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="21.0" />
+               </font>
+            </Label>
+            <CheckBox fx:id="soundCheck" layoutX="1592.0" layoutY="361.0" mnemonicParsing="false" onAction="#soundOn" AnchorPane.bottomAnchor="30.0" AnchorPane.rightAnchor="300.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="21.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="soundLabel" alignment="CENTER" layoutX="1650.0" layoutY="290.0" prefHeight="50.0" prefWidth="250.0" text="Sound" textFill="WHITE" AnchorPane.bottomAnchor="40.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="SPEED_LABEL" alignment="CENTER" layoutX="325.0" layoutY="75.0" prefHeight="50.0" prefWidth="155.0" text="SPEED">
+               <font>
+                  <Font name="Agency FB Bold" size="40.0" />
                </font>
             </Label>
          </children>
       </AnchorPane>
+      <AnchorPane fx:id="pane" prefHeight="1080.0" prefWidth="1920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="endLabel" text="The End" AnchorPane.bottomAnchor="150.0" AnchorPane.rightAnchor="150.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="96.0" />
+               </font>
+            </Label>
+            <Label layoutX="300.0" layoutY="35.0" text="X:" fx:id="x_position" />
+            <Label fx:id="y_position" layoutX="350.0" layoutY="35.0" text="Y:" />
+            <ImageView fx:id="light_1" fitHeight="80.0" fitWidth="20.0" layoutX="840.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/red_light.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="light_2" fitHeight="80.0" fitWidth="20.0" layoutX="700.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../../assets/red_light.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="light_3" fitHeight="80.0" fitWidth="20.0" layoutX="810.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+               <image>
+                  <Image url="@../../assets/red_light.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="light_4" fitHeight="80.0" fitWidth="20.0" layoutX="730.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../../assets/red_light.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="light_5" fitHeight="80.0" fitWidth="20.0" layoutX="1200.0" layoutY="780.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/red_light.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="light_6" fitHeight="80.0" fitWidth="20.0" layoutX="1060.0" layoutY="700.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../../assets/red_light.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="light_7" fitHeight="80.0" fitWidth="20.0" layoutX="1170.0" layoutY="670.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+               <image>
+                  <Image url="@../../assets/red_light.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="light_8" fitHeight="80.0" fitWidth="20.0" layoutX="1090.0" layoutY="810.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@../../assets/red_light.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="mirror" fitHeight="375.0" fitWidth="450.0" pickOnBounds="true" preserveRatio="true" visible="false" AnchorPane.leftAnchor="735.0" AnchorPane.rightAnchor="735.0" AnchorPane.topAnchor="0.0" />
+      <Button fx:id="menuButton" mnemonicParsing="false" onAction="#openMenu" prefHeight="50.0" prefWidth="150.0" scaleShape="false" text="Menu" textFill="#0072ba" wrapText="true" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font name="Agency FB Bold" size="30.0" />
+         </font></Button>
+      <Button fx:id="exit" mnemonicParsing="false" onAction="#Exit" prefHeight="50.0" prefWidth="50.0" text="Button" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <Button fx:id="minimise" mnemonicParsing="false" onAction="#Minimise" prefHeight="50.0" prefWidth="50.0" text="Button" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="20.0" />
    </children>
 </AnchorPane>

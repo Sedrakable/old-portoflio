@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="540.0" prefWidth="960.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="network.FXMLMenuController">
+    <stylesheets>
+        <URL value="@fxmlmenu.css" />
+    </stylesheets>
+   <children>
+      <ImageView fx:id="title" fitHeight="300.0" fitWidth="400.0" layoutX="650.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <image>
+            <Image url="@../../assets/logo_title.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="titleLabel" alignment="CENTER" prefHeight="88.0" prefWidth="362.0" text="Traffic Simulator" AnchorPane.bottomAnchor="38.0" AnchorPane.rightAnchor="38.0">
+         <font>
+            <Font name="Century Gothic Bold" size="46.0" />
+         </font>
+      </Label>
+      <Button fx:id="exit" layoutX="854.0" layoutY="35.0" mnemonicParsing="false" onAction="#Exit" prefHeight="50.0" prefWidth="50.0" text="Button" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0" />
+      <Button fx:id="full" layoutX="867.0" layoutY="20.0" mnemonicParsing="false" onAction="#Full" prefHeight="50.0" prefWidth="50.0" text="Button" AnchorPane.rightAnchor="90.0" AnchorPane.topAnchor="20.0" />
+      <Button fx:id="minimise" layoutX="824.0" layoutY="20.0" mnemonicParsing="false" onAction="#Minimise" prefHeight="50.0" prefWidth="50.0" text="Button" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="20.0" />
+      <Button fx:id="startButton" layoutX="1643.0" layoutY="120.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#Go" prefHeight="50.0" prefWidth="150.0" text="Start" textFill="WHITE" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font name="Century Gothic Bold" size="26.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

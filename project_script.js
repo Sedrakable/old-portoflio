@@ -95,6 +95,7 @@ function Close() {
 }
 
 function Replace(button) {
+  
   const popup = document.getElementById("popup");
 
   const popupBackgroundContainer = popup.childNodes[1].childNodes[1];
@@ -128,6 +129,7 @@ function Replace(button) {
 
   currentBackground = button.childNodes[1].childNodes[1];
   fleshTryer();
+  documentListeners();
 }
 
 function innerReplace(button) {
@@ -165,6 +167,7 @@ function openPopup(popup) {
   overlay.classList.add("active");
   leftButton.classList.add("active");
   rightButton.classList.add("active");
+  documentListeners();
 }
 
 function closePopup(popup) {
@@ -293,3 +296,56 @@ function dotOpacity() {
 window.onload = function () {
   dotChecker();
 };
+
+
+
+function documentListeners() {
+  const Files = document.querySelectorAll('.file');
+  
+  const SourceButtons = document.querySelectorAll('.source_arrow');
+  const docContainer = document.querySelector('.popup_text').querySelector('.download_container');
+  var sourceToggle = false;
+  
+  Files.forEach(item => {
+    var x = item.querySelector(".file_logo").querySelector("#file_logo");
+    var y = item.querySelector(".file_logo").querySelector(".document_buttons");
+    
+      item.addEventListener('mouseout', () => {
+        x.classList.remove("grey");
+        y.classList.remove("visable");
+         
+          
+          // item.querySelector("logo_background")
+      })
+  
+      item.addEventListener('mouseover', () => {
+        x.classList.add("grey");
+        y.classList.add("visable");
+          
+      })
+  })
+
+  SourceButtons.forEach(item => {
+      
+      item.addEventListener('click', () => {
+        if(!sourceToggle){
+          console.log(docContainer);
+          item.classList.add("rotate");
+          docContainer.classList.add("visable_container")
+
+        }else if(sourceToggle){
+          console.log(docContainer);
+          item.classList.remove("rotate");
+          docContainer.classList.remove("visable_container");
+        }
+        
+        sourceToggle = !sourceToggle;
+          
+          // item.querySelector("logo_background")
+      })
+  
+  })
+
+}
+
+

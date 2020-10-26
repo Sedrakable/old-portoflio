@@ -1,78 +1,99 @@
-.project_main{
-    background-color: rgb(219,219,252);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: stretch;
-    z-index: 0;
-    
-    overflow: hidden;
+html {
+  background-color: rgb(49, 49, 57);
+  margin: 0;
+  font-family: "Comfortaa", cursive;
+  height: 100%;
+  min-height: 100% !important;
+  overflow-y: auto;
 }
 
-
-.project_box{
-    width: auto;
-    padding: 0px 64px;
-    max-width: 800px;
-    min-width: 400px;
-    margin: auto;
-}
-.project_description{
-    width: 100%;
-    
-    background-color: rgb(40, 44, 52);
-    font-size: 1.3em;
-    padding-top: 40px;
-    padding-bottom: 40px;
+body {
+  position: relative;
+  height: 100%;
+  /* height: fit-content; */
 }
 
-#categories{
-    font-size: 50px;
-    margin-bottom: 0px;
-    font-weight: 200;
+.container {
+  position: relative;
+  height: fit-content;
+  min-height: 100%;
+}
+.project_main {
+  position: relative;
+  min-height: 100%;
+  max-height: fit-content;
+  top: 0;
 }
 
-.category_grid{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-    height: auto;
-    
-    margin: 64px 64px;
+.project_box {
+  width: auto;
+  padding: 0px 64px;
+  max-width: 800px;
+  min-width: 400px;
+  margin: auto;
+}
+.project_description {
+  width: 100%;
+
+  background-color: rgb(40, 44, 52);
+  font-size: 1.3em;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.category{
-    transform: scale(20%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 370px;
-    height: 370px;
-    position: relative;
-    margin:32px;
-
-    /* z-index: -1; */
+#categories {
+  font-size: 50px;
+  margin-bottom: 0px;
+  font-weight: 200;
 }
 
-.orange_background{
-
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: linear-gradient(-30deg,rgb(254,204,0),rgb(254,204,0),rgb(254,204,0),rgb(244,108,1),rgb(244,108,1),rgb(244,108,1));
-    animation: change 10s ease-in-out infinite;
-    background-size: 600% 600%;
-    /* z-index: -1; */
+.category_grid {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  height: fit-content;
+  margin: 0px 64px;
 }
 
-.logo_background{
-    position: absolute;
-    background-color: rgb(245,245,245);
-    width: 350px !important;
-    height: 350px;
-    
+.category {
+  transform: scale(20%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 370px;
+  position: relative;
+  margin: 32px;
+
+  /* z-index: -1; */
+}
+
+.orange_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(
+    -30deg,
+    rgb(254, 204, 0),
+    rgb(254, 204, 0),
+    rgb(254, 204, 0),
+    rgb(244, 108, 1),
+    rgb(244, 108, 1),
+    rgb(244, 108, 1)
+  );
+  animation: change 10s ease-in-out infinite;
+  background-size: 600% 600%;
+  /* z-index: -1; */
+}
+
+.logo_background {
+  position: absolute;
+  background-color: rgb(245, 245, 245);
+  width: 350px !important;
+  height: 350px;
 }
 
 /* .logo_background::after{
@@ -88,81 +109,99 @@
     background-size: 600% 600%;
 } */
 
-@keyframes change{
-    0%{
-        background-position: 0 50%;
-    }
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
 
-    50%{
-        background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    100%{
-        background-position: 0 50%;
-    }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
-#java> img ,#draw > img, #sculp >img,#pixel > img, #digital >img{
-    max-height: 100%;
-    max-width: 100%;
-    height: 300px;
-    width:auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+#java > img,
+#draw > img,
+#sculp > img,
+#pixel > img,
+#digital > img {
+  max-height: 100%;
+  max-width: 100%;
+  height: 300px;
+  width: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
-#origami >img , #painting >img, #unity >img{
-    max-height: 100%;
-    max-width: 100%;
-    width: 300px;
-    height:auto;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+#origami > img,
+#painting > img,
+#unity > img {
+  max-height: 100%;
+  max-width: 100%;
+  width: 300px;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
-
 
 .img_widen {
-    transition: 0.5s;
-    padding-left: 60px;
-    padding-right: 60px;
+  transition: 0.5s;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .img_shrink {
-    transition: 0.1s;
-    padding-left: 0px;
-    padding-right: 0px;
+  transition: 0.1s;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
-.img_transparent{
-    transition: 0.1s;
-    background-color: transparent;
+.img_transparent {
+  transition: 0.1s;
+  background-color: transparent;
 }
 
-.img_full{
-    transition: 0.1s;
-    background-color: rgb(245,245,245);
+.img_full {
+  transition: 0.1s;
+  background-color: rgb(245, 245, 245);
 }
 
 #logo_title {
-    bottom: -60px;
-    position: absolute;
-    text-align: left;
-    font-size: 2em;
-    margin-top: 10px;
-    color: rgb(40, 44, 52);
-    margin-top: 20px;
-    
+  bottom: -60px;
+  position: absolute;
+  text-align: left;
+  font-size: 2em;
+  margin-top: 10px;
+  margin-top: 20px;
+  background: linear-gradient(
+    -30deg,
+    rgb(254, 204, 0),
+    rgb(254, 204, 0),
+    rgb(254, 204, 0),
+    rgb(244, 108, 1),
+    rgb(244, 108, 1),
+    rgb(244, 108, 1)
+  );
+  background-size: 600% 600%;
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: change 10s ease-in-out infinite;
 }
 
-.category_grid a{
-    text-decoration: none;
+.category_grid a {
+  text-decoration: none;
 }
 
 /* .text_right{
@@ -173,3 +212,74 @@
 .text_left{
     transition: 0.5s;
 } */
+/* #background {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url("Logos/About/Triangle\ Grid.png");
+} */
+
+#background {
+  z-index: 0;
+  top: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+  background-image: url("Logos/About/Triangle\ Grid.png");
+}
+
+#foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#middle_left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+#middle_right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+
+#bottom_left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#bottom_right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+#bottom_left > img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#bottom_right > img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

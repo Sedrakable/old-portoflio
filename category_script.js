@@ -1,7 +1,7 @@
-const Items = document.querySelectorAll('.category');
+const Items = document.querySelectorAll(".category");
 
 // Items.forEach(item => {
-        
+
 //         item.addEventListener('mouseout', () => {
 //             console.log(item.childNodes);
 //             item.childNodes[1].classList.add('img_shrink');
@@ -19,22 +19,20 @@ const Items = document.querySelectorAll('.category');
 //         })
 // })
 
-Items.forEach(item => {
-        
-    item.addEventListener('mouseout', () => {
-        item.childNodes[1].classList.add('img_shrink');
-        item.childNodes[1].classList.remove('img_widen');
-        item.childNodes[3].classList.add('img_full');
-        item.childNodes[3].classList.remove('img_transparent');
-        
-        // item.querySelector("logo_background")
-    })
+Items.forEach((item) => {
+  item.addEventListener("mouseout", () => {
+    item.childNodes[1].classList.add("img_shrink");
+    item.childNodes[1].classList.remove("img_widen");
+    item.childNodes[3].classList.add("img_full");
+    item.childNodes[3].classList.remove("img_transparent");
 
-    item.addEventListener('mouseover', () => {
-        item.childNodes[1].classList.remove('img_shrink');
-        item.childNodes[1].classList.add('img_widen');
-        item.childNodes[3].classList.remove('img_full');
-        item.childNodes[3].classList.add('img_transparent');
-        
-    })
-})
+    // item.querySelector("logo_background")
+  });
+
+  item.addEventListener("mouseover", () => {
+    item.childNodes[1].classList.remove("img_shrink");
+    item.childNodes[1].classList.add("img_widen");
+    item.childNodes[3].classList.remove("img_full");
+    item.childNodes[3].classList.add("img_transparent");
+  });
+});

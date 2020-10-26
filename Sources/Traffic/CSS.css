@@ -1,221 +1,203 @@
-
-
-.text-field{
-  -fx-alignment: CENTER;
-  -fx-background-color: #C91E00;
-  -fx-text-fill: #141414;
-  -fx-border-color: #FFDA00;
-  -fx-border-width: 4px;
-  -fx-font-size: 28px;
-  -fx-font-family: "Agency FB";
-  -fx-font-weight: bold;
-  -fx-padding: 0;
+#pane1{
+    -fx-background-image: url("file:./assets/street_1.png");
+    -fx-background-size: cover;
 }
 
-.scroll-pane{
-  -fx-background-color: #141414;
+#pane2{
+    -fx-background-image: url("file:./assets/street2.gif");
+    -fx-background-size: cover;
 }
 
 #pane3{
-   -fx-background-color: #141414;
-   
+    -fx-background-image: url("file:./assets/CACHOU.GIF");
+    -fx-background-size: cover;
 }
-
-#title .text{
-    -fx-fill:#C91E00;
-    -fx-stroke: #FFDA00;
-    -fx-stroke-width: 2px;
-}
-
-
-.scroll-bar:vertical .track{
-    -fx-background-color: #141414;
-    
-}
-
-.scroll-bar:vertical {
-    -fx-border-color: #FFDA00;
-    -fx-border-width: 0px;
-    -fx-pref-width: 20px;
-    
-}
-
-.scroll-bar:vertical .increment-button ,
-.scroll-bar:vertical .decrement-button {
-    -fx-pref-height: 15px;
-    -fx-pref-width: 20px;
-    
-    -fx-background-color: transparent;
-
-
-    
-}
-.scroll-bar:vertical .increment-button{
-    -fx-background-image: url("/assets/down.png");
-}
-.scroll-bar:vertical .decrement-button {
-    -fx-background-image: url("/assets/up.png");
-}
-.scroll-bar:vertical .increment-button:hover{
-    -fx-background-image: url("/assets/down_hover.png");
-}
-.scroll-bar:vertical .decrement-button:hover{
-    -fx-background-image: url("/assets/up_hover.png");
-}
-
-.scroll-bar .increment-arrow,
-.scroll-bar .decrement-arrow{
-    -fx-background-color: transparent;
-}
-
-
-.scroll-bar:vertical .thumb{
-    -fx-background-color: #C91E00;
-    -fx-background-radius: 0px;
-}
-
-.scroll-bar:vertical .thumb:hover,.scroll-bar:vertical .thumb:focused{
-    -fx-background-color: #FFDA00;
-}
-
-#labels{
-    -fx-background-color: #FFDA00;
-    -fx-text-fill: #141414;
-    -fx-font-size: 18px;
-    -fx-font-family: "Agency FB"; 
-    -fx-padding: 0px;
-    -fx-border-width: 0px;
-    -fx-border-color: #C91E00;
-    -fx-font-weight: bold;
-    -fx-alignment: CENTER;
-    
-}
-
-#numero{
-    -fx-text-fill: #C91E00;
-    -fx-font-size: 20px;
-    -fx-font-family: "Agency FB"; 
-    -fx-padding: 0;
-    -fx-font-weight: bold;
-    
-}
-
-#rec{
-    -fx-fill: #C91E00;
-}
-#rowActions{
-    -fx-text-fill: #C91E00;
-    -fx-font-size: 18px;
-    -fx-font-family: "Agency FB"; 
-    -fx-padding: 0;
-    -fx-font-weight: bold;
-}
-
-#pane1{
-    -fx-background-image: url("/assets/background_2.png");
-    -fx-background-color: #141414;
-}
-
-#start, #reduce{
-  -fx-background-color: transparent;
-  -fx-font-weight: bold;
-  -fx-text-fill: #141414;
-  -fx-font-size: 32px;
-  -fx-font-family: "Agency FB"; 
-  -fx-padding: 0;
-  -fx-margin: 0;
-}
-
-#start{
-    -fx-background-image: url("/assets/start.png");
-}
-
-#reduce{
-    -fx-background-image: url("/assets/reduce.png");
-}
-
-#start:hover, #reduce:hover{
-  -fx-text-fill: #FFDA00;
-}
-
-#row_box, #col_box{
-    -fx-font-size: 25px;
-    -fx-font-family: "Agency FB";
-    -fx-padding: 0;
-    -fx-background-color: transparent;
-    -fx-mark-color: disabled; 
-    -fx-background-image: url("/assets/link.png");
-  
-}
-
-#row_box:hover, #col_box:hover{
-    -fx-background-image: url("/assets/link_hover.png");
-}
-
-
-
-#row_box > .label,#col_box > .label{
-        -fx-text-fill: #141414;
-        -fx-font-weight: bold;
-}
-
-
-#row_box .context-menu,#col_box .context-menu {
-    -fx-translate-x: 23;
-    -fx-pref-width: 50px;
-    -fx-background-color: #C91E00; 
-    -fx-border-width: 4px;
-    -fx-border-color: #FFDA00;
-    -fx-padding: 0;
-    
-    
-}
-
-
-
-#row_box .menu-item, #col_box .menu-item{
-    -fx-background-color: #C91E00;
-    -fx-font-size: 30px;
-    -fx-font-family: "Agency FB";
-    -fx-font-weight: bold;
-    -fx-padding: 0;
-    
-    
-}
-#row_box .menu-item:hover,#col_box .menu-item:hover{
-    -fx-background-color: #FFDA00;
-}
-
-    
-#row_box .menu-item > .label, #col_box .menu-item > .label { 
-    -fx-text-fill: #141414; 
-    -fx-padding: 0;
-}
-
-
 
 #exit{
-    -fx-background-image: url("/assets/exit.png");
+    -fx-background-image: url("file:./assets/exit_street.png");
     -fx-background-color: transparent;
     -fx-text-fill: transparent;
+    -fx-background-size: cover;
 }
 
-#exit:hover{
-    -fx-background-image: url("/assets/exit_hover.png");
-    
-    
+#full{
+    -fx-background-image: url("file:./assets/full_street.png");
+    -fx-background-color: transparent;
+    -fx-text-fill: transparent;
+    -fx-background-size: cover;
 }
 
 #minimise{
-    -fx-background-image: url("/assets/minimise.png");
+    -fx-background-image: url("file:./assets/minimise_street.png");
     -fx-background-color: transparent;
     -fx-text-fill: transparent;
+    -fx-background-size: cover;
 }
 
-#minimise:hover{
-    -fx-background-image: url("/assets/minimise_hover.png");
+
+.rectangle{
+    -fx-background-image: url("file:./assets/lada.png");
+    -fx-background-color: transparent;
+    -fx-background-size: cover;
+}
+
+#mainMenu
+{
+    -fx-background-image: url("file:./assets/CACHOU.gif");
+    -fx-background-size: cover;
+}
+
+#startButton{
+    -fx-background-image: url("file:./assets/traffic_tile.png");
+    -fx-background-color: transparent;
+/*    -fx-text-fill: transparent;*/
+    -fx-background-size: cover;
+}
+
+#menuPane{
+    -fx-background-image: url("file:./assets/car_table.png");
+    -fx-background-size: cover;
+}
+
+#start{
+    background-color: aqua;
+    -fx-background-size: cover;
+}
+
+#mirror{
+    -fx-image: url("file:./assets/mirror.gif");
+}
+
+#lvl1Button:hover{
+    -fx-background-image: url("file:./assets/lvl1_button_hover.png");
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+}
+
+#lvl1Button{
+    -fx-background-image: url("file:./assets/lvl1_button.png");
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+}
+
+#lvl2Button:hover{
+    -fx-background-image: url("file:./assets/lvl2_button_hover.png");
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+}
+
+#lvl2Button{
+    -fx-background-image: url("file:./assets/lvl2_button.png");
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+}
+
+#lvl3Button:hover{
+    -fx-background-image: url("file:./assets/lvl3_button_hover.png");
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+}
+
+#lvl3Button{
+    -fx-background-image: url("file:./assets/lvl3_button.png");
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+}
+
+#red_light{
+    -fx-image: url("file:./assets/red_light.png");   
+}
+
+#green_light{
+    -fx-image: url("file:./assets/green_light.png");   
+}
+
+#lables .text{
+    -fx-fill: #EBEBEB;
+    -fx-effect: innershadow(gaussian,#343434,5,0.3,0,0);
+}
+
+#slider .track{
+    -fx-pref-height: 16px;
+    -fx-background-color: #1c1400;
+    -fx-effect: innershadow(gaussian,#000,10,0.3,0,0);
+}
+
+#slider .thumb{
+    -fx-background-radius: 0px;
+    -fx-pref-height: 40px;
+    -fx-pref-width: 20px;
+    -fx-background-image: url("file:./assets/thumb.png");
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+}
+
+#blockCheck .text{
+    -fx-fill: #a3a3a3;
+}
+
+
+#blockCheck {
+/*    -fx-background-color: #1c1400;
+    -fx-background-radius: 3px;*/
+    -fx-effect: innershadow(gaussian,#000,10,0.5,0,0);
+    -fx-pref-width: 120px;
+    -fx-pref-height: 60px;
+}
+
+#blockCheck .box{
+/*    -fx-translate-x: 5;*/
+    -fx-pref-width: 120px;
+    -fx-pref-height: 60px;
+    -fx-background-image: url("file:./assets/off.png");
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+}
+
+#blockCheck:selected .box{
     
+    -fx-background-image: url("file:./assets/on.png");
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: transparent;
+}
+
+#checkLabel{
+    -fx-background-color: #1c1400;
+    -fx-background-radius: 3px;
+    -fx-effect: innershadow(gaussian,#000,10,0.5,0,0);
+}
+
+#menuButton{
+    -fx-background-image: url("file:./assets/menuButton.png");
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-padding: 0px;
     
 }
+
+#title{
+    -fx-image: url("file:./assets/logo_title.png");
+}
+
+#titleLabel .text{
+/*    //-fx-fill: #DCDCDC; */
+    -fx-stroke: #DCDCDC;
+    -fx-stroke-width: 3px;
+}
+
+#end .text{
+    -fx-stroke: #DCDCDC;
+    -fx-stroke-width: 3px;
+}
+
+
+
+
+
+
 
 

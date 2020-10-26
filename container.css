@@ -1,34 +1,31 @@
-
 body {
-    background-color: rgb(49, 49, 57);
-    margin: 0px;
-    font-family: 'Comfortaa', cursive;
-    height:100%;
-    position: relative;
+  background-color: rgb(49, 49, 57);
+  margin: 0px;
+  font-family: "Comfortaa", cursive;
+  height: 100%;
+  position: relative;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 h1 {
-    font-weight: lighter;
-    color: rgb(254,183,1);
-    font-size: 30px;
+  font-weight: lighter;
+  color: rgb(254, 183, 1);
+  font-size: 30px;
 }
 
-p{
-    font-weight: normal;
-    color:  rgb(245, 245, 245);
-    margin-top: 10px;
-    line-height: 1.4em;
+p {
+  font-weight: normal;
+  color: rgb(245, 245, 245);
+  margin-top: 10px;
+  line-height: 1.4em;
 }
-
