@@ -95,7 +95,6 @@ function Close() {
 }
 
 function Replace(button) {
-  
   const popup = document.getElementById("popup");
 
   const popupBackgroundContainer = popup.childNodes[1].childNodes[1];
@@ -297,55 +296,55 @@ window.onload = function () {
   dotChecker();
 };
 
-
-
 function documentListeners() {
-  const Files = document.querySelectorAll('.file');
-  
-  const SourceButtons = document.querySelectorAll('.source_arrow');
-  const docContainer = document.querySelector('.popup_text').querySelector('.download_container');
+  const Files = document.querySelectorAll(".file");
+
+  const SourceButtons = document.querySelectorAll(".source_arrow");
+  const docContainer = document
+    .querySelector(".popup_text")
+    .querySelector(".download_container");
   var sourceToggle = false;
-  
-  Files.forEach(item => {
+
+  Files.forEach((item) => {
     var x = item.querySelector(".file_logo").querySelector("#file_logo");
     var y = item.querySelector(".file_logo").querySelector(".document_buttons");
-    
-      item.addEventListener('mouseout', () => {
-        x.classList.remove("grey");
-        y.classList.remove("visable");
-         
-          
-          // item.querySelector("logo_background")
-      })
-  
-      item.addEventListener('mouseover', () => {
-        x.classList.add("grey");
-        y.classList.add("visable");
-          
-      })
-  })
 
-  SourceButtons.forEach(item => {
-      
-      item.addEventListener('click', () => {
-        if(!sourceToggle){
-          console.log(docContainer);
-          item.classList.add("rotate");
-          docContainer.classList.add("visable_container")
+    item.addEventListener("mouseout", () => {
+      x.classList.remove("grey");
+      y.classList.remove("visable");
 
-        }else if(sourceToggle){
-          console.log(docContainer);
-          item.classList.remove("rotate");
-          docContainer.classList.remove("visable_container");
-        }
-        
-        sourceToggle = !sourceToggle;
-          
-          // item.querySelector("logo_background")
-      })
-  
-  })
+      // item.querySelector("logo_background")
+    });
 
+    item.addEventListener("mouseover", () => {
+      x.classList.add("grey");
+      y.classList.add("visable");
+    });
+  });
+
+  SourceButtons.forEach((item) => {
+    item.addEventListener("click", () => {
+      if (!sourceToggle) {
+        console.log(docContainer);
+        item.classList.add("rotate");
+        docContainer.classList.add("visable_container");
+      } else if (sourceToggle) {
+        console.log(docContainer);
+        item.classList.remove("rotate");
+        docContainer.classList.remove("visable_container");
+      }
+
+      sourceToggle = !sourceToggle;
+
+      // item.querySelector("logo_background")
+    });
+
+    item.addEventListener("mouseout", () => {
+      item.classList.remove("grey");
+    });
+
+    item.addEventListener("mouseover", () => {
+      item.classList.add("grey");
+    });
+  });
 }
-
-

@@ -23,6 +23,9 @@ function setActive() {
     case "/projects.html":
       projectButton.classList.add("active_button_wrapper");
       break;
+    case "/":
+      homeButton.classList.add("active_button_wrapper");
+      break;
     default:
       projectButton.classList.add("active_button_wrapper");
   }

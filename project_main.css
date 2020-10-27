@@ -55,7 +55,7 @@ body {
   align-items: stretch;
   flex-wrap: wrap;
   height: fit-content;
-  margin: 0px 64px;
+  margin: 0px 64px 64px 64px;
 }
 
 .category {
