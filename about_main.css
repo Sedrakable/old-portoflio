@@ -1,178 +1,172 @@
-
-#background{
-    
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: url("Logos/About/Triangle\ Grid.png");
-    overflow:hidden;
+#background {
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: url("Logos/About/Triangle\ Grid.png");
+  overflow: hidden;
 }
 
-#foreground{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    overflow:hidden;
+#foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
 }
 
-#left{
-    position: absolute;
-    top: 0;
-    left: 0;
+#left {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-#right{
-    position: absolute;
-    top: 0;
-    right: 0;
+#right {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
-#middle_left{
-    position: absolute;
-    top: 50%;
-    left: 0;
+#middle_left {
+  position: absolute;
+  top: 50%;
+  left: 0;
 }
 
-#middle_right{
-    position: absolute;
-    top: 50%;
-    right: 0;
+#middle_right {
+  position: absolute;
+  top: 50%;
+  right: 0;
 }
 
-#bottom_left{
-    position: absolute;
-    bottom: 0;
-    left: 0;
+#bottom_left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-#bottom_right{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+#bottom_right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
-#bottom_left >img{
-    position: absolute;
-    bottom: 0;
-    left: 0;
+#bottom_left > img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-#bottom_right>img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
+#bottom_right > img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
-
-
-.about_main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 80%;
-    width: 1000px;
-    background:  rgb(49, 49, 57);
-    overflow: hidden;
+.about_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 80%;
+  width: 1000px;
+  background: rgb(49, 49, 57);
+  overflow: hidden;
 }
 
 .parallax {
-    width: 100%;
-    min-height: 800px;
-    background: transparent;
+  width: 100%;
+  min-height: 800px;
+  background: transparent;
 }
-
-
-
 
 .image_text {
-    position: absolute;
-    top: 500px;
-    left: 320px;
-    text-align: left;
-    transform: translate(-50%, -50%);
-    font-weight: 900;
-    font-size: 3em;
-    color: rgb(215, 216, 233);
+  position: absolute;
+  top: 500px;
+  left: 320px;
+  text-align: left;
+  transform: translate(-50%, -50%);
+  font-weight: 900;
+  font-size: 3em;
+  color: rgb(215, 216, 233);
 }
-
-
-
-
-
 
 .item {
-    width: 100%;
-    display: flex;
-    flex-direction: row;   
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    height: auto;
-  
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: auto;
 }
 
-
-.info_container{
-    display: flex;  
-    width: 100%;
-    height: auto;
-    min-height: 400px;
-    background: linear-gradient(90deg,rgb(244,108,1),rgb(244,108,1),rgb(254,204,0),rgb(254,204,0));
-    animation: change 6s ease-in-out infinite;
-    background-size: 600% 600%;
+.info_container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  background: linear-gradient(
+    90deg,
+    rgb(244, 108, 1),
+    rgb(244, 108, 1),
+    rgb(254, 204, 0),
+    rgb(254, 204, 0)
+  );
+  animation: change 6s ease-in-out infinite;
+  background-size: 600% 600%;
 }
 
-@keyframes change{
-    0%{
-        background-position: 0 50%;
-    }
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
 
-    50%{
-        background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    100%{
-        background-position: 0 50%;
-    }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
-.grid_background{
-    margin-left: 8px;
-    padding: 32px;
-    height: auto;
-    background: rgb(21, 23, 27);
-/*     
+.grid_background {
+  margin-left: 8px;
+  padding: 32px;
+  height: auto;
+  background: rgb(21, 23, 27);
+  /*     
     padding-bottom: 32px; */
-    
 }
 
-
-.title{
-    width: 100%;
-    height: auto;
-    padding-bottom: 16px;
-    margin-right: 24px;
-    font-weight: 200;
-    font-size: 4em;
-    font-style: normal;
-    background: linear-gradient(90deg,rgb(244,108,1),rgb(244,108,1),rgb(254,204,0),rgb(254,204,0));
-    background-size: 400% 400%;
-    color: #000;
+.title {
+  width: 100%;
+  height: auto;
+  padding-bottom: 16px;
+  margin-right: 24px;
+  font-weight: 200;
+  font-size: 4em;
+  font-style: normal;
+  background: linear-gradient(
+    90deg,
+    rgb(244, 108, 1),
+    rgb(244, 108, 1),
+    rgb(254, 204, 0),
+    rgb(254, 204, 0)
+  );
+  background-size: 400% 400%;
+  color: #000;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-    animation: change 6s ease-in-out infinite;
-    
+  animation: change 6s ease-in-out infinite;
 }
 
-.message{
-    
-    /* padding-right: 100px; */
-    line-height: 32px;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 18px;
-    color: rgb(215, 216, 233);
-    
+.message {
+  /* padding-right: 100px; */
+  line-height: 32px;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 18px;
+  color: rgb(215, 216, 233);
 }
