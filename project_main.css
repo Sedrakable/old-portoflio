@@ -1,4 +1,4 @@
-html {
+/* html {
   background-color: rgb(49, 49, 57);
   margin: 0;
   font-family: "Comfortaa", cursive;
@@ -10,9 +10,7 @@ html {
 body {
   position: relative;
   height: 100%;
-  /* height: fit-content; */
-}
-
+  height: fit-content; */
 .container {
   position: relative;
   height: fit-content;
@@ -47,6 +45,19 @@ body {
   font-weight: 200;
 }
 
+.line {
+  position: relative;
+  background-color: rgb(32, 32, 38);
+  color: rgb(202, 202, 233);
+  width: auto;
+  height: auto;
+  margin: 96px 20% 8px 20%;
+  font-size: 40px;
+  text-align: center;
+  padding: 6px;
+  border-left: 6px solid rgb(254, 196, 0);
+}
+
 .category_grid {
   position: relative;
   display: flex;
@@ -55,7 +66,7 @@ body {
   align-items: stretch;
   flex-wrap: wrap;
   height: fit-content;
-  margin: 0px 64px 64px 64px;
+  margin: 16px 64px;
 }
 
 .category {
@@ -219,14 +230,13 @@ body {
   background-image: url("Logos/About/Triangle\ Grid.png");
 } */
 
-#project_background {
-  z-index: 0;
-  top: 0;
+#background {
+  z-index: -1;
   position: absolute;
   height: 100%;
   width: 100%;
-  /* overflow: hidden; */
-  background-image: url("Logos/About/Triangle\ Grid.png");
+  background-image: url("Logos/About/Triangle Grid.png");
+  overflow: hidden;
 }
 
 #foreground {

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="uft-8" />
+    <title>Page Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="container.css">
+    <link rel="stylesheet" href="category_main.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="scroll.css">
+    <link rel="stylesheet" href="document.css">
+    <script defer src="my_parallax_v2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" ></script>
+</head>
+
+<body>
+    <script> 
+        $(function(){
+          $("#nav_container").load("navbar.html"); 
+        });
+    </script>
+    <div id="nav_container">
+
+    </div>
+    
+    <div class="container">
+        <div class="category_description">
+            <div id="background"></div>         
+            <div id="foreground"> 
+                <div id="middle_left"> 
+                    <img src="Logos/About/Middle Left 3x.png"></img>
+                </div>
+    
+                <div id="middle_right"> 
+                    <img src="Logos/About/Middle Right 3x.png"></img>
+                </div>       
+            </div>
+            <div class="category_box">
+                <h1 id=categories>Java Projects</h1>
+                <p>
+                    Java is the fist coding language that I learned in college. It tought me the basics of programming, 
+                    since it is the programming languge that most others build upon. In the process I tought myself CSS and JavaFX. Additionaly, I learned to use diferent IDEs like Netbeans, Eclipse and SceneBuilder.
+                </p>
+            </div>
+            <div class="category_background" style="background-image:url(Logos/unity_logo.png)"></div>
+        </div>
+
+        <div class="item_grid" id= 'item_grid'>
+
+            <div open-button="#popup" class="item_wrapper">
+                <div class="item_background_invis">
+                    <img src="Pictures/Unity/AppMainScreen.png">
+                    <img src="Pictures/Unity/real.jpg">
+                    <img src="Pictures/Unity/Screenshot_1.jpg">
+                    <img src="Pictures/Unity/Screenshot_2.jpg">
+                    <img src="Pictures/Unity/Screenshot_3.jpg">
+                    <img src="Pictures/Unity/Screenshot_4.jpg">
+                    <img src="Pictures/Unity/Screenshot_5.png">
+                    <img src="Pictures/Unity/Screenshot_6.png">
+                    <iframe class="giphy-embed" src="https://www.youtube.com/embed/UayT-DkgXOk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <img src="Pictures/Unity/Main Icon 512px.png">
+                    
+                </div>
+                <div class="item_background">
+                    <img src="Pictures/Unity/Main Icon 512px.png">
+                </div>
+                <h3 id=item_title>Plazma Pong</h3>
+                <div class="item_description_invis">
+                    <div class="item_description">
+                        <div class="sources">
+                            <div class="source_title"> Sources </div>
+                            <div class="source_arrow">
+                                <img src="Logos/bottom_arrow.png">
+                            </div>
+                        </div>
+                        <div class="download_container">
+                            <div class="file">
+                                <div class ='file_logo'>
+                                    <img src="Logos/Document Logo.png" id='file_logo'>
+                                    <div class="document_buttons">      
+                                        <a href="Sources/PlazmaPong/PlazmaPong.apk"   id="download" download>
+                                            <img src="Logos/Download Logo.png" class = "document_button">
+                                        </a>
+                                    </div>
+                                </div>                           
+                                <div class="document_text">
+                                    PlazmaPong.apk
+                                </div>
+                            </div>
+                        </div>
+                        <div class="popup_description">
+                            <b>Game Description:</b>
+                
+                            <br> Plazma Pong is about the satisfaction of beating a level that you first thought was unbeatable. Remember the falling block patterns, line the ball up, and shoot! 
+                            Make sure to have the proper strategy to bounce of walls and avoid bombs. You have 12 amazing levels to go through and a final Boss that will make every other level seem easy.
+
+                            <p></p>  
+                            <br> <b>The Process:</b>  
+                                                
+                            <br> After learning the basics of Unity 2D, C#, and Illustrator, I decided to work on a simple project, in terms of gameplay, but that had the functionality that most apps these days have.         
+                            <p></p>                    
+                            Here is what I did step by step:
+                            <ol>
+                                <li>Worked on physics and gameplay of one level</li>
+                                <li>Added a simple UI</li>
+                                <li>Added sprites to the level and UI</li>
+                                <li>Added more levels and gameplay mechanics</li>
+                                <li>Balanced the levels</li>
+                                <li>Created a level selection page and the sprites needed</li>
+                                <li>Connected the functionality and the progression of the level selection page (storing data)</li>
+                                <li>Added a Boss level, with all the visuals and functionality (took a very long time)</li>
+                                <li>Added an unlimited game mode, Token Grab</li>
+                                <li>Added 4 Power-ups to Token Grab.</li>
+                                <li>Created patterns and a spawner script that would randomly spawn a pattern, but at the same time slowly increasing in speed and difficulty</li>
+                                <li>Added a script that would collect the tokens and store them as currency</li>
+                                <li>Added a Shop where the player can purchase skins and power-up upgrades</li>
+                                <li>Added and Ad mechanic to the Token Grab so that the user can play the game mode a specific amount of times before waiting for a cooldown or watching an Ad</li>
+                                <li>Added a scene where the Player can purchase Token for real-world currency</li>
+                                <li>Cleaned up all the visuals and added new sprites</li>
+                                <li>Added more skins to the store.</li>
+                                <li>Balanced everything</li>
+                                <li>Added an SFX</li>
+                                <li>Added a settings Scene</li>
+                                <li>Checked for Major Bugs</li>
+
+                              </ol> 
+                        
+                              <p></p> 
+                            This is a very basic overview of the amount of work that I had to put into this game, there was so much I had to do and learn to make my vision into a reality. I can confidently say that I developed a full-fledged mobile game.
+
+                        </div>
+                        <div class="popup_size">Size: 1920 x 1080 Resolution</div>
+                        <div class="popup_date">Date: 2019</div>
+                        
+                    </div>
+                </div>
+                <div class="dots hide_dot">
+                
+                </div>
+            </div>
+
+
+            
+        </div>    
+    </div>
+
+    <script> 
+        $(function(){
+          $("#big_popup_container").load("popup.html"); 
+        });
+    </script>
+    <div id="big_popup_container">
+
+    </div>
+</body>
+
+</html>
