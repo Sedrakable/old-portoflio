@@ -191,6 +191,7 @@ h1 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-left: 28px;
 }
 
 .logo_container :hover {
