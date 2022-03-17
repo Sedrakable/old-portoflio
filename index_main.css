@@ -1,3 +1,13 @@
+.maintenance {
+  position: relative;
+  background-color: yellow;
+  width: 100%;
+  z-index: 50;
+  text-align: center;
+  font-size: 64px;
+  padding: 32px 0;
+}
+
 .index_main {
   position: relative;
   width: auto;
